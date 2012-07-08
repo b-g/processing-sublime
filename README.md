@@ -10,7 +10,7 @@ Install this bundle via [Package Control](http://wbond.net/sublime_packages/pack
 ## Usage
 The Processing.app has to be open and 'Use external editor' in Processing preferences has to be checked.
 
-![Use external editor](http://https://github.com/b-g/processing-sublime/blob/master/_Mac/processing_preferences.gif "Use external editor")
+![Use external editor](https://github.com/b-g/processing-sublime/blob/master/_Mac/processing_preferences.gif "Use external editor")
 - OS X: `cmd+b`
 
 
