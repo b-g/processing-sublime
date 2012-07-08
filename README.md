@@ -1,13 +1,30 @@
-## Processing Bundle for Sublime Text
-A Sublime Text Bundle for the [Processing](http://processing.org/) programming enviroment.
+# Processing Bundle for Sublime Text 2
+A [Processing](http://processing.org/) bundle for Sublime Text 2.
 
 ###Mac OSX
 
 ###Linux & Windows
 Only partly supported: No buildsystem.
 
+
+
 ## Installation
-Install this bundle via [Package Control](http://wbond.net/sublime_packages/package_control) or copy everything to your Sublime Text packages directory e.g. OS X: `~/Library/Application Support/Sublime Text 2/Packages/ColorPicker`
+There are tree easy ways to install the Processing Bundle:
+
+### Using Sublime Package Control
+If you are using [Sublime Package Control](http://wbond.net/sublime_packages/package_control), you can easily install the Processing Bundle via the `Package Control: Install Package` menu item.
+
+### Using Git
+Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
+
+Go to your Sublime Text 2 `Packages` directory and clone the theme repository using the command below:
+    git clone https://github.com/b-g/processing-sublime/ "Processing"
+
+### Download Manually
+* Download the files using the GitHub .zip download option
+* Unzip the files and rename the folder to `Processing`
+* Copy the folder to your Sublime Text 2 `Packages` directory e.g. OS X: `~/Library/Application Support/Sublime Text 2/Packages/ColorPicker`
+
 
 
 ## Usage
