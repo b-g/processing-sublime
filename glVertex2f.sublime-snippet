@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[gl.glVertex2f(${1:0.0f}, ${2:0.0f});]]></content>
+    <description>glVertex2f</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glvertex2f</tabTrigger>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[// replaces the top of the active matrix stack with the identity matrix
+gl.glLoadIdentity();]]></content>
+    <description>glLoadIdentity</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glloadidentity</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[trim(${3:str});]]></content>
+    <description>trim</description>
+    <scope>source.pde</scope>
+    <tabTrigger>trim</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[byte ${1:b} ${6:= ${3:127}};]]></content>
+    <description>byte</description>
+    <scope>source.pde</scope>
+    <tabTrigger>byte</tabTrigger>
+</snippet>

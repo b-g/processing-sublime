@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[@param  ${1:parameter}  ${2:description}]]></content>
+    <description>@param</description>
+    <scope>source.pde</scope>
+    <tabTrigger>@</tabTrigger>
+</snippet>

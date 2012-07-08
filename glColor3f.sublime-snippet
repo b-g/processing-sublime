@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[gl.glColor3f(${1:red}, ${2:green}, ${3:blue});]]></content>
+    <description>glColor3f</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glcolor3f</tabTrigger>
+</snippet>

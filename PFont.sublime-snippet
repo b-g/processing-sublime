@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[PFont ${1:font};
+$1 = loadFont(${3:"${2:FFScala-32.vlw}"});]]></content>
+    <description>PFont</description>
+    <scope>source.pde</scope>
+    <tabTrigger>font</tabTrigger>
+</snippet>

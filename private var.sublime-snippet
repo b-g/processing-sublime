@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[private ${1:String} ${2:str}${4: = ${3:value}};]]></content>
+    <description>private var</description>
+    <scope>source.pde</scope>
+    <tabTrigger>private</tabTrigger>
+</snippet>

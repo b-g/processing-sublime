@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[screen.width]]></content>
+    <description>screen.width</description>
+    <scope>source.pde</scope>
+    <tabTrigger>screen</tabTrigger>
+</snippet>

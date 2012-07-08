@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[createReader(${1:filename});]]></content>
+    <description>createReader</description>
+    <scope>source.pde</scope>
+    <tabTrigger>file</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[private ${1:void} ${2:name}($3) {
+	$0${1/void$|(.+)/(?1:return null;)/}
+}]]></content>
+    <description>private function</description>
+    <scope>source.pde</scope>
+    <tabTrigger>private</tabTrigger>
+</snippet>

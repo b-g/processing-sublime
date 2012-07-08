@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[get(${6:${1:x}, ${2:y}${5:, ${3:width}, ${4:height}}});]]></content>
+    <description>get pixel</description>
+    <scope>source.pde</scope>
+    <tabTrigger>get</tabTrigger>
+</snippet>

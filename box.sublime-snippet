@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[box(${4:${1:width}, ${2:height}, ${3:depth}});]]></content>
+    <description>box</description>
+    <scope>source.pde</scope>
+    <tabTrigger>box</tabTrigger>
+</snippet>

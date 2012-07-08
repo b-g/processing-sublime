@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[text(${1:data}, ${2:x}, ${3:y}${5:, ${4:z}});]]></content>
+    <description>text data</description>
+    <scope>source.pde</scope>
+    <tabTrigger>text</tabTrigger>
+</snippet>

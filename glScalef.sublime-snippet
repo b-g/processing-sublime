@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[// multiply the current matrix by a general scaling matrix
+gl.glScalef(${1:x}, ${2:y}, ${3:z});]]></content>
+    <description>glScalef</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glscalef</tabTrigger>
+</snippet>

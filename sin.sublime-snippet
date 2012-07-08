@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[sin(${1:rad});]]></content>
+    <description>sin</description>
+    <scope>source.pde</scope>
+    <tabTrigger>sin</tabTrigger>
+</snippet>

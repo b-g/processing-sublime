@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[translate(${1:x}, ${2:y}${4:, ${3:z}});]]></content>
+    <description>translate</description>
+    <scope>source.pde</scope>
+    <tabTrigger>translate</tabTrigger>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[${1:public }class ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} ${3:extends}
+{
+	
+	//--------------------------------------
+	//  CONSTRUCTOR
+	//--------------------------------------
+	
+	public $2 (${4:arguments}) {
+		${0:// expression}
+	}
+}
+]]></content>
+    <description>class</description>
+    <scope>source.pde</scope>
+    <tabTrigger>class</tabTrigger>
+</snippet>

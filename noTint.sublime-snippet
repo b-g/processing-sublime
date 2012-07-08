@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[noTint();]]></content>
+    <description>noTint</description>
+    <scope>source.pde</scope>
+    <tabTrigger>notint</tabTrigger>
+</snippet>

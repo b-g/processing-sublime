@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[endRecord();]]></content>
+    <description>endRecord</description>
+    <scope>source.pde</scope>
+    <tabTrigger>file</tabTrigger>
+</snippet>

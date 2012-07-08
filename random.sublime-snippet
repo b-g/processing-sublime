@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[random(${1:value1}${3:, ${2:value2}});]]></content>
+    <description>random</description>
+    <scope>source.pde</scope>
+    <tabTrigger>random</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[public ${1:String} get${2/./\u$0/}() {
+    return ${2:fieldName};
+}
+]]></content>
+    <description>get</description>
+    <scope>source.pde</scope>
+    <tabTrigger>get</tabTrigger>
+</snippet>

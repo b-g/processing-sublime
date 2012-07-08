@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[curveVertex(${1:x}, ${2:y});]]></content>
+    <description>curveVertex</description>
+    <scope>source.pde</scope>
+    <tabTrigger>curveVertex</tabTrigger>
+</snippet>

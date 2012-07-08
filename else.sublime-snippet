@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[else {
+	$0
+}]]></content>
+    <description>else</description>
+    <scope>source.pde</scope>
+    <tabTrigger>else</tabTrigger>
+</snippet>

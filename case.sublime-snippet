@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[case ${1:expression} :
+	$0
+break;	]]></content>
+    <description>case</description>
+    <scope>source.pde</scope>
+    <tabTrigger>case</tabTrigger>
+</snippet>

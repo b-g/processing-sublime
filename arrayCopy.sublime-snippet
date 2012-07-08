@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[arrayCopy(${1:src}, ${2:dest}, ${4:, ${3:length}});]]></content>
+    <description>arrayCopy</description>
+    <scope>source.pde</scope>
+    <tabTrigger>arraycopy</tabTrigger>
+</snippet>

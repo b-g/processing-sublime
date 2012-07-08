@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[// set the current texture coordinates - 2 floats
+gl.glTexCoord2f(${1:0.0f}, ${2:0.0f});]]></content>
+    <description>glTexCoord2f</description>
+    <scope>source.pde</scope>
+    <tabTrigger>gltexcoord2f</tabTrigger>
+</snippet>

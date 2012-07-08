@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[log(${1:value});]]></content>
+    <description>log</description>
+    <scope>source.pde</scope>
+    <tabTrigger>log</tabTrigger>
+</snippet>

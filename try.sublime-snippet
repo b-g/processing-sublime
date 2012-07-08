@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[try {
+	$1
+}]]></content>
+    <description>try</description>
+    <scope>source.pde</scope>
+    <tabTrigger>try</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[arc(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:start}, ${6:stop});]]></content>
+    <description>arc</description>
+    <scope>source.pde</scope>
+    <tabTrigger>arc</tabTrigger>
+</snippet>

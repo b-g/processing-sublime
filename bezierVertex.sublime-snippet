@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[bezierVertex(${1:cx1}, ${2:cy1}, ${3:cx2}, ${4:cy2}, ${5:x}, ${6:y});]]></content>
+    <description>bezierVertex</description>
+    <scope>source.pde</scope>
+    <tabTrigger>beziervertex</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[textDescent();]]></content>
+    <description>textDescent</description>
+    <scope>source.pde</scope>
+    <tabTrigger>text</tabTrigger>
+</snippet>

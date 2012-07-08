@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[bezier(${1:x1}, ${2:y1}, ${3:cx1}, ${4:cy1}, ${5:cx2}, ${6:cy2}, ${7:x2}, ${8:y2});]]></content>
+    <description>bezier</description>
+    <scope>source.pde</scope>
+    <tabTrigger>bezier</tabTrigger>
+</snippet>

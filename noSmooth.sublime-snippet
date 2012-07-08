@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[noSmooth();]]></content>
+    <description>noSmooth</description>
+    <scope>source.pde</scope>
+    <tabTrigger>smooth</tabTrigger>
+</snippet>

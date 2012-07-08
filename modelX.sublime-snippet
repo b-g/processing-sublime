@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[modelX(${1:x}, ${2:y}, ${3:z});]]></content>
+    <description>modelX</description>
+    <scope>source.pde</scope>
+    <tabTrigger>coordinates</tabTrigger>
+</snippet>

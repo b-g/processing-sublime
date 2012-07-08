@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[triangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3});]]></content>
+    <description>triangle</description>
+    <scope>source.pde</scope>
+    <tabTrigger>triangle</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[splice(${1:array}, ${2:value/array2}, ${3:index});]]></content>
+    <description>splice</description>
+    <scope>source.pde</scope>
+    <tabTrigger>splice</tabTrigger>
+</snippet>

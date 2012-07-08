@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[lerp(${1:value1}, ${2:value2}, ${3:amt});]]></content>
+    <description>lerp</description>
+    <scope>source.pde</scope>
+    <tabTrigger>lerp</tabTrigger>
+</snippet>

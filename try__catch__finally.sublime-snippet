@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[try {
+	$1
+} catch (${2:Exception} e) {
+	$3
+} finally {
+	$4
+}]]></content>
+    <description>try..catch..finally</description>
+    <scope>source.pde</scope>
+    <tabTrigger>try</tabTrigger>
+</snippet>

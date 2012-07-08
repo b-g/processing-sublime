@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[year()]]></content>
+    <description>year</description>
+    <scope>source.pde</scope>
+    <tabTrigger>time</tabTrigger>
+</snippet>

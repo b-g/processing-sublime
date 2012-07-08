@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[copy(${10:${9:srcImg}, }${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:dx}, ${6:dy}, ${7:dwidth}, ${8:dheight});]]></content>
+    <description>copy</description>
+    <scope>source.pde</scope>
+    <tabTrigger>copy</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[binary(${3:value}${5:, ${4:digits}});]]></content>
+    <description>binary</description>
+    <scope>source.pde</scope>
+    <tabTrigger>binary</tabTrigger>
+</snippet>

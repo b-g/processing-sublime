@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[abs(${1:value});]]></content>
+    <description>abs</description>
+    <scope>source.pde</scope>
+    <tabTrigger>abs</tabTrigger>
+</snippet>

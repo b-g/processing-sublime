@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[reverse(${1:array});]]></content>
+    <description>reverse</description>
+    <scope>source.pde</scope>
+    <tabTrigger>reverse</tabTrigger>
+</snippet>

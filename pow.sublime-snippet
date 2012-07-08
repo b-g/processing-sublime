@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[pow(${1:num}, ${2:exponent});]]></content>
+    <description>pow</description>
+    <scope>source.pde</scope>
+    <tabTrigger>pow</tabTrigger>
+</snippet>

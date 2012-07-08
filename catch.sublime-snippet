@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[catch (${1:Exception} e) {
+	$0
+}]]></content>
+    <description>catch</description>
+    <scope>source.pde</scope>
+    <tabTrigger>catch</tabTrigger>
+</snippet>

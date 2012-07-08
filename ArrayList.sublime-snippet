@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[ArrayList<${1:String}> ${2:arraylist} = new ArrayList<$1>();]]></content>
+    <description>ArrayList</description>
+    <scope>source.pde</scope>
+    <tabTrigger>arraylist</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[public ${1:void} ${2:name}($3) {
+	$0${1/void$|(.+)/(?1:return null;)/}
+}]]></content>
+    <description>public function</description>
+    <scope>source.pde</scope>
+    <tabTrigger>public</tabTrigger>
+</snippet>

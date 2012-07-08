@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[specular(${8:${3:value1}, ${4:value2}, ${5:value3}${7:, ${6:alpha}}});]]></content>
+    <description>specular</description>
+    <scope>source.pde</scope>
+    <tabTrigger>material</tabTrigger>
+</snippet>

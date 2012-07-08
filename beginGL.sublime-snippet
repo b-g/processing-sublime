@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[pgl.beginGL();
+$1
+pgl.endGL();]]></content>
+    <description>beginGL</description>
+    <scope>source.pde</scope>
+    <tabTrigger>begingl</tabTrigger>
+</snippet>

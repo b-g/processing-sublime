@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[// multiply the current matrix by a translation matrix
+gl.glTranslatef(${1:x}, ${2:y}, ${3:z});]]></content>
+    <description>glTranslatef</description>
+    <scope>source.pde</scope>
+    <tabTrigger>gltranslatef</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[while ($1){
+	$0
+}]]></content>
+    <description>while</description>
+    <scope>source.pde</scope>
+    <tabTrigger>while</tabTrigger>
+</snippet>

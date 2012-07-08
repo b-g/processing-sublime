@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[noStroke();]]></content>
+    <description>noStroke</description>
+    <scope>source.pde</scope>
+    <tabTrigger>nostroke</tabTrigger>
+</snippet>

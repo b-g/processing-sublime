@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[ceil(${1:value});]]></content>
+    <description>ceil</description>
+    <scope>source.pde</scope>
+    <tabTrigger>ceil</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[degrees(${1:rad});]]></content>
+    <description>degrees</description>
+    <scope>source.pde</scope>
+    <tabTrigger>degrees</tabTrigger>
+</snippet>

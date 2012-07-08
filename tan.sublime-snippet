@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[tan(${1:rad});]]></content>
+    <description>tan</description>
+    <scope>source.pde</scope>
+    <tabTrigger>tan</tabTrigger>
+</snippet>

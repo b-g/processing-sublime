@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[ellipse(${1:x}, ${2:y}, ${3:width}, ${4:height});]]></content>
+    <description>ellipse</description>
+    <scope>source.pde</scope>
+    <tabTrigger>ellipse</tabTrigger>
+</snippet>

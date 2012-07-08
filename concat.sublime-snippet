@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[concat(${1:array1}, ${2:array2});]]></content>
+    <description>concat</description>
+    <scope>source.pde</scope>
+    <tabTrigger>concat</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[public void set${1/./\u$0/}(${2:String} new${1/./\u$0/}) {
+    ${1:fieldName} = new${1/./\u$0/};
+}
+]]></content>
+    <description>set</description>
+    <scope>source.pde</scope>
+    <tabTrigger>set</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[// spush and pop the current matrix stack
+gl.glPushMatrix();
+$1
+gl.glPopMatrix();]]></content>
+    <description>glPushMatrix</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glpushmatrix</tabTrigger>
+</snippet>

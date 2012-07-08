@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[void keyTyped(){
+	${1}
+}]]></content>
+    <description>keyTyped</description>
+    <scope>source.pde</scope>
+    <tabTrigger>key</tabTrigger>
+</snippet>

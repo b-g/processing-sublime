@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[match(${3:str}, ${4:regexp});]]></content>
+    <description>match</description>
+    <scope>source.pde</scope>
+    <tabTrigger>match</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[protected ${1:void} ${2:name}($3) {
+	$0${1/void$|(.+)/(?1:return null;)/}
+}]]></content>
+    <description>protected function</description>
+    <scope>source.pde</scope>
+    <tabTrigger>protected</tabTrigger>
+</snippet>

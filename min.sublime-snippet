@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[min(${1:value1}, ${2:value2}${4:, ${3:value3}});]]></content>
+    <description>min</description>
+    <scope>source.pde</scope>
+    <tabTrigger>min</tabTrigger>
+</snippet>

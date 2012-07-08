@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[// Empties buffers. Call this when all previous issues commands completed
+gl.glFlush();]]></content>
+    <description>glFlush</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glflush</tabTrigger>
+</snippet>

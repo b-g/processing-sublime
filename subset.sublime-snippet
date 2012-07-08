@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[subset(${1:array}, ${2:offset});]]></content>
+    <description>subset</description>
+    <scope>source.pde</scope>
+    <tabTrigger>subset</tabTrigger>
+</snippet>

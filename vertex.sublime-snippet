@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[vertex(${1:x}, ${2:y}${5:, ${3:u}, ${4:v}});]]></content>
+    <description>vertex</description>
+    <scope>source.pde</scope>
+    <tabTrigger>vertex</tabTrigger>
+</snippet>

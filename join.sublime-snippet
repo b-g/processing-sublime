@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[join(${3:strgArray}, ${4:seperator});]]></content>
+    <description>join</description>
+    <scope>source.pde</scope>
+    <tabTrigger>join</tabTrigger>
+</snippet>

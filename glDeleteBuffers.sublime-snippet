@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[${3:// Parameters are the same for glGenBuffers}
+gl.glDeleteBuffers(${1:4}, ${2:bufferObjects});]]></content>
+    <description>glDeleteBuffers</description>
+    <scope>source.pde</scope>
+    <tabTrigger>gldeletebuffers</tabTrigger>
+</snippet>

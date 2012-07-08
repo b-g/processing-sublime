@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[PImage(${1:width}, ${2:height});]]></content>
+    <description>PImage</description>
+    <scope>source.pde</scope>
+    <tabTrigger>pimage</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[append(${1:array}, ${2:element});]]></content>
+    <description>append</description>
+    <scope>source.pde</scope>
+    <tabTrigger>append</tabTrigger>
+</snippet>

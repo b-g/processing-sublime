@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[radians(${1:deg});]]></content>
+    <description>radians</description>
+    <scope>source.pde</scope>
+    <tabTrigger>radians</tabTrigger>
+</snippet>

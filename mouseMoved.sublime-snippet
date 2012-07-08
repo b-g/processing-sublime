@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[void mouseMoved(){
+	${1}
+}]]></content>
+    <description>mouseMoved</description>
+    <scope>source.pde</scope>
+    <tabTrigger>mouse</tabTrigger>
+</snippet>

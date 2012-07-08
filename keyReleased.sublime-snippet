@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[void keyReleased(){
+	${1}
+}]]></content>
+    <description>keyReleased</description>
+    <scope>source.pde</scope>
+    <tabTrigger>key</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[public static ${1:void} ${2:name}($3) {
+	$0${1/void$|(.+)/(?1:return null;)/}
+}]]></content>
+    <description>public static function</description>
+    <scope>source.pde</scope>
+    <tabTrigger>public</tabTrigger>
+</snippet>

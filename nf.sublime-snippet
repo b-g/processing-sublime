@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[nf(${3:value}, ${4:left}${6:, ${5:right}});]]></content>
+    <description>nf</description>
+    <scope>source.pde</scope>
+    <tabTrigger>nf</tabTrigger>
+</snippet>

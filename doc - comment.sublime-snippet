@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[/**
+ *	${1:@private}$0
+ */]]></content>
+    <description>doc - comment</description>
+    <scope>source.pde</scope>
+    <tabTrigger>doc</tabTrigger>
+</snippet>

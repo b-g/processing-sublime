@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[printMatrix();]]></content>
+    <description>printMatrix</description>
+    <scope>source.pde</scope>
+    <tabTrigger>matrix</tabTrigger>
+</snippet>

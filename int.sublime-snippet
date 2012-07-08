@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[int ${1:f} ${6:= ${3:0}};]]></content>
+    <description>int</description>
+    <scope>source.pde</scope>
+    <tabTrigger>int</tabTrigger>
+</snippet>

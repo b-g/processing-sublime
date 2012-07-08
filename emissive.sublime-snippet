@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[emissive(${8:${3:value1}, ${4:value2}, ${5:value3}});]]></content>
+    <description>emissive</description>
+    <scope>source.pde</scope>
+    <tabTrigger>material</tabTrigger>
+</snippet>

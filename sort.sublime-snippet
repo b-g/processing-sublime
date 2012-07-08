@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[sort(${1:dataArray}${3:, ${2:count}});]]></content>
+    <description>sort</description>
+    <scope>source.pde</scope>
+    <tabTrigger>sort</tabTrigger>
+</snippet>

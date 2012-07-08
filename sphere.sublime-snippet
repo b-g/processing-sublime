@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[sphere(${1:radius});]]></content>
+    <description>sphere</description>
+    <scope>source.pde</scope>
+    <tabTrigger>sphere</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[second()]]></content>
+    <description>second</description>
+    <scope>source.pde</scope>
+    <tabTrigger>time</tabTrigger>
+</snippet>

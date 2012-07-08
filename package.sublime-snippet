@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[/**
+ *  ${1:Description}
+ *
+ *	@author ${2:$TM_FULLNAME}
+ *	@since  ${3:`date +%d.%m.%Y`}
+ */
+
+package ${4:package};]]></content>
+    <description>package</description>
+    <scope>source.pde</scope>
+    <tabTrigger>package</tabTrigger>
+</snippet>

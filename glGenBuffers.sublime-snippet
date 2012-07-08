@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[// import java.nio.IntBuffer;
+// import java.nio.FloatBuffer;
+// import com.sun.opengl.util.BufferUtil;
+
+// You might need to create four buffers to store vertext data, normal data, texture coordinate data, and indices in vertex arrays
+IntBuffer bufferObjects = IntBuffer.allocate(${1:4}); 
+gl.glGenBuffers($1, bufferObjects);
+
+int vertexCount = ${2:3};
+int numCoordinates = ${3:3};
+// vertexCount * numCoordinates
+FloatBuffer vertices = BufferUtil.newFloatBuffer(vertexCount * numCoordinates);
+float[] v = {0.0f, 0.0f, 0.0f,
+             1.0f, 0.0f, 0.0f,
+             0.0f, 1.0f, 1.0f};
+vertices.put(v);
+
+// Bind the first buffer object ID for use with vertext array data
+gl.glBindBuffer(GL.GL_ARRAY_BUFFER, bufferObjects.get(0));
+gl.glBufferData(GL.GL_ARRAY_BUFFER, vertexCount * numCoordinates * BufferUtil.SIZEOF_FLOAT, vertices, GL.GL_STATIC_DRAW);]]></content>
+    <description>glGenBuffers</description>
+    <scope>source.pde</scope>
+    <tabTrigger>glgenbuffers</tabTrigger>
+</snippet>

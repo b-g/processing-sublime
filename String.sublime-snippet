@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[String ${1:str} ${6:= "${3:CCCP}"};]]></content>
+    <description>String</description>
+    <scope>source.pde</scope>
+    <tabTrigger>string</tabTrigger>
+</snippet>

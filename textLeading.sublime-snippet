@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[textLeading(${1:size});]]></content>
+    <description>textLeading</description>
+    <scope>source.pde</scope>
+    <tabTrigger>text</tabTrigger>
+</snippet>

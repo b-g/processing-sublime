@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[online]]></content>
+    <description>online</description>
+    <scope>source.pde</scope>
+    <tabTrigger>online</tabTrigger>
+</snippet>

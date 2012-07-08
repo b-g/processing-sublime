@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[atan2(${1:rad});]]></content>
+    <description>atan2</description>
+    <scope>source.pde</scope>
+    <tabTrigger>atan2</tabTrigger>
+</snippet>

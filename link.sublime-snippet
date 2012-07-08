@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[link(${1:url}${4:, ${3:target}});]]></content>
+    <description>link</description>
+    <scope>source.pde</scope>
+    <tabTrigger>link</tabTrigger>
+</snippet>

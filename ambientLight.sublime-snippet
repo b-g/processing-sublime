@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[ambientLight(${1:v1}, ${2:v2}, ${3:v3}${7:, ${4:x}, ${5:y}, ${6:z}});]]></content>
+    <description>ambientLight</description>
+    <scope>source.pde</scope>
+    <tabTrigger>light</tabTrigger>
+</snippet>

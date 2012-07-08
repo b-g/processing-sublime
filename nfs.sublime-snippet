@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[nfs(${3:value}, ${4:left}${6:, ${5:right}});]]></content>
+    <description>nfs</description>
+    <scope>source.pde</scope>
+    <tabTrigger>nfs</tabTrigger>
+</snippet>

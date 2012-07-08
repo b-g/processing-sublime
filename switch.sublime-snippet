@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[switch ($1){
+	$0
+}]]></content>
+    <description>switch</description>
+    <scope>source.pde</scope>
+    <tabTrigger>switch</tabTrigger>
+</snippet>

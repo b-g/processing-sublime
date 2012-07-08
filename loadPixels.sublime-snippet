@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[loadPixels();]]></content>
+    <description>loadPixels</description>
+    <scope>source.pde</scope>
+    <tabTrigger>loadpixels</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+*	]]></content>
+    <keyEquivalent>
+</keyEquivalent>
+    <description>doc - newline</description>
+    <scope>comment.block.java-processing</scope>
+</snippet>

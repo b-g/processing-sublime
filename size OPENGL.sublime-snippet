@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[size(${1:200}, ${2:200}${3:, OPENGL});]]></content>
+    <description>size OPENGL</description>
+    <scope>source.pde</scope>
+    <tabTrigger>size</tabTrigger>
+</snippet>

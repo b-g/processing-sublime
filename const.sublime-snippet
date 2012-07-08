@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[static final ${1:Object} ${2:VAR_NAM} = $0;]]></content>
+    <description>const</description>
+    <scope>source.pde</scope>
+    <tabTrigger>const</tabTrigger>
+</snippet>

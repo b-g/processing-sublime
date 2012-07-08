@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[nfc(${3:value}${5:, ${4:right}});]]></content>
+    <description>nfc</description>
+    <scope>source.pde</scope>
+    <tabTrigger>nfc</tabTrigger>
+</snippet>

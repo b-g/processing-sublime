@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[bezierTangent(${1:a}, ${1:b}, ${1:c}, ${1:d}, ${1:t});]]></content>
+    <description>bezierTangent</description>
+    <scope>source.pde</scope>
+    <tabTrigger>bezier</tabTrigger>
+</snippet>

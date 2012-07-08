@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[curvePoint(${1:a}, ${1:b}, ${1:c}, ${1:d}, ${1:t});]]></content>
+    <description>curvePoint</description>
+    <scope>source.pde</scope>
+    <tabTrigger>curve</tabTrigger>
+</snippet>

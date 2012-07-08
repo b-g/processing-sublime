@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[size(${1:512}, ${2:512});]]></content>
+    <description>size</description>
+    <scope>source.pde</scope>
+    <tabTrigger>size</tabTrigger>
+</snippet>

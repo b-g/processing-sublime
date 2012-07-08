@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[default :
+	$0
+break;	]]></content>
+    <description>default</description>
+    <scope>source.pde</scope>
+    <tabTrigger>default</tabTrigger>
+</snippet>
