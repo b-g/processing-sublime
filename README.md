@@ -1,5 +1,5 @@
 # Processing Bundle for Sublime Text 2
-A [Processing](http://processing.org/) bundle for Sublime Text 2.
+A [Processing](http://processing.org/) bundle for [Sublime Text 2](http://www.sublimetext.com/2).
 
 ###Mac OSX
 
