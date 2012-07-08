@@ -1,3 +1,6 @@
+## Processing Bundle for Sublime Text
+A Sublime Text Bundle for the [Processing](http://processing.org/) programming enviroment.
+
 ###Mac OSX
 
 ###Linux & Windows
@@ -8,10 +11,12 @@ Install this bundle via [Package Control](http://wbond.net/sublime_packages/pack
 
 
 ## Usage
-The Processing.app has to be open and 'Use external editor' in Processing preferences has to be checked.
+- The Processing.app has to be open and 'Use external editor' in Processing preferences has to be checked.
+![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_preferences.gif "Use external editor preference")
 
-![Use external editor](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_preferences.gif "Use external editor")
-- OS X: `cmd+b`
+- Select in Sublime Text the Processing buildsystem: `Tools -> Build system -> Processing`
+
+- Run the sketch: `cmd+b`
 
 
 ## Acknowledgements
