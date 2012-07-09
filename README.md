@@ -2,6 +2,7 @@
 A [Processing](http://processing.org/) bundle for [Sublime Text 2](http://www.sublimetext.com/2).
 
 ###Mac OSX
+Fully supported.
 
 ###Linux & Windows
 Only partly supported: No buildsystem.
@@ -12,7 +13,10 @@ Only partly supported: No buildsystem.
 There are 3 easy ways to install the Processing Bundle:
 
 ### Using Sublime Package Control
+Currently pending ...
+<!---
 If you are using [Sublime Package Control](http://wbond.net/sublime_packages/package_control), you can easily install the Processing Bundle via the `Sublime Text 2 -> Preferences -> Package Control: Install Package` menu item.
+-->
 
 ### Using Git
 Alternatively you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
