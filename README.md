@@ -17,6 +17,7 @@ There are 3 easy ways to install the Processing Bundle:
 ### Using Sublime Package Control
 Coming, currently pending ...
 <!---
+	
 If you are using [Sublime Package Control](http://wbond.net/sublime_packages/package_control), you can easily install the Processing Bundle via the `Sublime Text 2 -> Preferences -> Package Control: Install Package` menu item.
 -->
 
