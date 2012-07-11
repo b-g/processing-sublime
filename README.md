@@ -2,7 +2,7 @@
 A [Processing](http://processing.org/) bundle for [Sublime Text 2](http://www.sublimetext.com/2). Check the [demo video](https://vimeo.com/45573600) on vimeo!
 
 ###Mac OSX
-![Overview](https://github.com/b-g/processing-sublime/raw/master/_Mac/overview.png "Overview")
+[<img src="https://github.com/b-g/processing-sublime/raw/master/_Mac/overview.png">](https://vimeo.com/45573600)
 
 Fully supported: snippets + buildsystem.
 
