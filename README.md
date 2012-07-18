@@ -8,7 +8,7 @@ Fully supported: snippets + buildsystem.
 
 ###Linux & Windows
 Only partly supported: snippets, but no buildsystem.
-
+(Would be nice if someone on windows/linux could figure out the buildsystems, please let me know if your are interested)
 
 
 ## Installation
@@ -21,7 +21,7 @@ If you are using [Sublime Package Control](http://wbond.net/sublime_packages/pac
 Alternatively you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
 
 Go to your Sublime Text 2 `Packages` directory and clone the theme repository using the command below:
-`git clone https://github.com/b-g/processing-sublime/ "Processing"
+`git clone https://github.com/b-g/processing-sublime/ "Processing"`
 
 ### Download Manually
 - Download the files using the GitHub .zip download option
