@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[println("${1:var}: "+${1:var});$0]]></content>
+    <description>println var</description>
+    <scope>source.pde</scope>
+    <tabTrigger>println</tabTrigger>
+</snippet>
