@@ -11,6 +11,7 @@ class WindowManager:
 	GetWindowText = ctypes.windll.user32.GetWindowTextW
 	GetClassName = ctypes.windll.user32.GetClassNameW
 	SetForegroundWindow = ctypes.windll.user32.SetForegroundWindow
+	ShowWindow = ctypes.windll.user32.ShowWindow
 	KeyboardEvent = ctypes.windll.user32.keybd_event
 	MessageBox = ctypes.windll.user32.MessageBoxA
 
@@ -40,6 +41,7 @@ class WindowManager:
 
 	def set_foreground_window(self):
 		if self.current_window_handle != None:
+			WindowManager.ShowWindow(self.current_window_handle, 9)
 			WindowManager.SetForegroundWindow(self.current_window_handle)
 
 	def send_ctrl_plus_key_to_current_window(self, key):
