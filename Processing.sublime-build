@@ -1,0 +1,13 @@
+{
+    "selector": "source.pde",
+
+    "osx":
+    {
+    	"cmd": ["sh", "$packages/Processing/_Mac/run_sketch.sh", "$file_path"]
+    },
+
+    "windows":
+    {
+    	"target": "run_processing_sketch_on_windows"
+    }
+}
