@@ -1,4 +1,0 @@
-{
-    "cmd": ["sh", "$packages/Processing/_Mac/run_sketch.sh", "$file_path"],
-    "selector": "source.pde"
-}
