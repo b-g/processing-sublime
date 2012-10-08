@@ -28,8 +28,6 @@ Go to your Sublime Text 2 `Packages` directory and clone the theme repository us
 - Unzip the files and rename the folder to `Processing`
 - Copy the folder to your Sublime Text 2 `Packages` directory e.g. OS X: `~/Library/Application Support/Sublime Text 2/Packages/Processing`
 
-
-
 ## Usage
 - The Processing.app has to be open and 'Use external editor' in Processing preferences has to be checked.
 ![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_preferences.gif "Use external editor preference")
@@ -38,6 +36,8 @@ Go to your Sublime Text 2 `Packages` directory and clone the theme repository us
 
 - Run the sketch: `cmd+b`
 
+## Getting Start With Sublime Text
+If you are new to Sublime I recommend the excellent and free video tutorial by nettuts: [Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/). If you are short of time, then make sure to watch at least the lession [Multiple Cursors and Incremental Search]( https://tutsplus.com/lesson/multiple-cursors-and-incremental-search/) (~6min), highly recommended!
 
 ## Acknowledgements
 - This bundle is very much based on [Processing TextMate Bundle by Leon Hong](http://www.onebitwonder.com/projects/processing/), thanks for all the good work!
