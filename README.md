@@ -29,6 +29,7 @@ Go to your Sublime Text 2 `Packages` directory and clone the theme repository us
 
 ## Usage
 - Make sure to run after you have installed the Processing.app `Tools -> Install "processing-java"`, this step is just needed under OSX.
+
 ![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_preferences.gif "Use external editor preference")
 
 - Select in Sublime Text the Processing buildsystem: `Tools -> Build system -> Processing`
