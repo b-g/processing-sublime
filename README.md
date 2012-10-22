@@ -1,5 +1,6 @@
 # Processing Bundle for Sublime Text 2
 A [Processing](http://processing.org/) bundle for [Sublime Text 2](http://www.sublimetext.com/2). Check the [demo video](https://vimeo.com/45573600) on vimeo!
+Please note: you must have at least (>Processing 2.0b4), otherwise the buildsystem of the this bundle won't work. The video is a bit outdated, you don't have to run the Processing.app in parallel to run sketches.
 
 ###Mac OSX
 [<img src="https://github.com/b-g/processing-sublime/raw/master/_Mac/overview.png">](https://vimeo.com/45573600)
@@ -8,8 +9,6 @@ Fully supported: snippets + buildsystem.
 
 ###Linux & Windows
 Only partly supported: snippets, but no buildsystem.
-(Would be nice if someone on windows/linux could figure out the buildsystems, please let me know if your are interested)
-
 
 ## Installation
 There are 3 easy ways to install the Processing Bundle:
@@ -29,7 +28,7 @@ Go to your Sublime Text 2 `Packages` directory and clone the theme repository us
 - Copy the folder to your Sublime Text 2 `Packages` directory e.g. OS X: `~/Library/Application Support/Sublime Text 2/Packages/Processing`
 
 ## Usage
-- The Processing.app has to be open and 'Use external editor' in Processing preferences has to be checked.
+- Make sure to run after you have installed the Processing.app `Tools -> Install "processing-java"`, this step is just needed under OSX.
 ![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_preferences.gif "Use external editor preference")
 
 - Select in Sublime Text the Processing buildsystem: `Tools -> Build system -> Processing`
