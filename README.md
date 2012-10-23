@@ -7,7 +7,16 @@ Please note: you must have at least (>=Processing 2.0b4), otherwise the buildsys
 
 Fully supported: snippets + buildsystem.
 
-###Linux & Windows
+###Linux
+Only works for now with processing-2.0b4
+(there seems to be a bug with processing-java in processing-2.0b5)
+
+You will need to set your PATH to where your processing application is located. Example:
+`export PATH=$PATH:/opt/processing/processing-2.0b4`
+
+Fully supported: snippets + buildsystem.
+
+###Windows
 Only partly supported: snippets, but no buildsystem.
 
 ## Installation
