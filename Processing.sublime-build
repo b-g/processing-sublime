@@ -4,5 +4,10 @@
     "osx":
     {
     	"cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"]
+    },
+
+    "linux":
+    {
+    	"cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"]
     }
 }
