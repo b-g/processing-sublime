@@ -1,4 +1,4 @@
-`Nota Bene: There was a bug introduced with processing-2.0b5, see [issue 5](https://github.com/b-g/processing-sublime/issues/5). Please use in the meantime Processing 2.0b4 unitl Processing 2.0b6 is out. Sorry for the inconvenience!`
+# Nota Bene: There was a bug introduced with processing-2.0b5, see [issue 5](https://github.com/b-g/processing-sublime/issues/5). Please use in the meantime Processing 2.0b4 unitl Processing 2.0b6 is out. Sorry for the inconvenience!
 
 # Processing Bundle for Sublime Text 2
 
