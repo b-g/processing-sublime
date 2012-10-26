@@ -6,7 +6,7 @@
     "variants": [
 
       { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
-        "name": "Run a sketch fullscreen"
+        "name": "Run sketch fullscreen"
       },
 
     	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux32", "--export", "--platform=linux", "--bits=32", "--force"],
