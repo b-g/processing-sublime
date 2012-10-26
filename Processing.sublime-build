@@ -1,13 +1,33 @@
 {
     "selector": "source.pde",
 
-    "osx":
-    {
-    	"cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"]
-    },
+    "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
 
-    "linux":
-    {
-    	"cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"]
-    }
+    "variants": [
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
+        "name": "Run a sketch fullscreen"
+      },
+
+    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux32", "--export", "--platform=linux", "--bits=32", "--force"],
+      	"name": "Export sketch as a 32-bit linux application"
+    	},
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux64", "--export", "--platform=linux", "--force"],
+        "name": "Export sketch as a 64-bit linux application"
+      },
+
+    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.macosx", "--export", "--platform=macosx", "--force"],
+      	"name": "Export sketch as a macosx application"
+    	},
+
+    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows32", "--export", "--platform=windows", "--bits=32", "--force"],
+      	"name": "Export sketch as a 32-bit windows application"
+    	},
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows64", "--export", "--platform=windows", "--force"],
+        "name": "Export sketch as a 64-bit windows application"
+      }
+
+	]
 }

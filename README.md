@@ -9,7 +9,7 @@ Fully supported: snippets + buildsystem.
 
 ###Linux
 Only works for now with processing-2.0b4
-(there seems to be a bug with processing-java in processing-2.0b5)
+(there seems to be a bug with processing-java in processing-2.0b5 [issue 1334](http://code.google.com/p/processing/issues/detail?id=1334) )
 
 You will need to set your PATH to where your processing application is located. Example:
 `export PATH=$PATH:/opt/processing/processing-2.0b4`
