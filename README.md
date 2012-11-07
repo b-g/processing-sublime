@@ -16,7 +16,12 @@ You will need to set your PATH to where your processing application is located, 
 `export PATH=$PATH:/opt/processing/processing-2.0b4`
 
 ###Windows
-You have to edit the file `processing.sublime-build` and replace `"processing-java"` with `"c:/path/to/processing/processing-java.exe"`, otherwise the buildsystem won't work.
+You will need to set your PATH environment variable to where your processing application is located:
+- on the desktop, right-click "My Computer" and click Properties.
+- In the System Properties window, click on the Advanced tab.
+- In the Advanced section, click the Environment Variables button.
+- Edit the "Path" variable. Append the processing path e.g.: `C:\Program Files\Processing-2.0b6\` to Variable value.
+  Each entry is separated with a semicolon.
 
 
 ## Installation
