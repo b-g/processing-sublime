@@ -22,7 +22,7 @@ You will need to set your PATH environment variable to where your processing app
 - In the Advanced section, click the Environment Variables button.
 - Edit the "Path" variable. Append the processing path (e.g.: `C:\Program Files\Processing-2.0b6\`) to Variable value.
   Each entry is separated with a semicolon.
-
+![Advanced System Settings -> Environment Variables](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_path.png "Advanced System Settings -> Environment Variables")
 
 ## Installation
 There are 3 easy ways to install the Processing Bundle:
