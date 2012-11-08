@@ -55,4 +55,4 @@ If you are new to Sublime I recommend the excellent and free video tutorial by n
 - I used the [textmate-to-sublime-converter](https://github.com/srbs/textmate-to-sublime-converter) to convert the snippets from the original Processing TextMate Bundle to Sublime Text speak.
 - Syntax highlighting tweaking by [Mark Brand](https://github.com/ignism)
 - Linux build script and testing by [Julien Deswaef](http://xuv.be/)
-- Windows build script and documention [Ralf Baecker](github.com/rlfbckr)
+- Windows build script and documention [Ralf Baecker](http://github.com/rlfbckr)
