@@ -3,13 +3,13 @@
 A [Processing](http://processing.org/) bundle for [Sublime Text 2](http://www.sublimetext.com/2). Check the [demo video](https://vimeo.com/45573600) on vimeo!
 Please note: you must have at least (>=Processing 2.0b6), otherwise the buildsystem of the this bundle won't work. The video is a bit outdated, you don't have to run any longer the Processing.app in parallel to run sketches. If you have to stick for some reason to an old Processing verion e.g. 1.5.1 you can use the [old version](https://github.com/b-g/processing-sublime/tags) of this bundle.
 
-[<img src="https://github.com/b-g/processing-sublime/raw/master/_Mac/overview.png">](https://vimeo.com/45573600)
+[<img src="https://github.com/b-g/processing-sublime/raw/master/Images/overview.png">](https://vimeo.com/45573600)
 
 ## Preparations
 ###OSX
 Make sure to run after you have installed the Processing.app `Tools -> Install "processing-java"`
 
-![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/_Mac/processing_preferences.gif "Use external editor preference")
+![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/Images/processing_preferences.gif "Use external editor preference")
 
 ###Linux
 You will need to set your PATH to where your processing application is located, e.g.:
@@ -23,7 +23,7 @@ You will need to set your PATH environment variable to where your processing app
 - Edit the "Path" variable. Append the processing path (e.g.: `;C:\Program Files\Processing-2.0b6\`) to Variable value.
   Each entry is separated with a semicolon.
 
-![Advanced System Settings -> Environment Variables](https://raw.github.com/rlfbckr/processing-sublime/patch-1/_Mac/processing_path.png)
+![Advanced System Settings -> Environment Variables](https://github.com/b-g/processing-sublime/raw/master/Images/processing_path_windows.gif)
 
 ## Installation
 There are 3 easy ways to install the Processing Bundle:
