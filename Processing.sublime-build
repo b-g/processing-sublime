@@ -1,6 +1,5 @@
 {
     "selector": "source.pde",
-    // for windows users replace "processing-java" with "c:/path/to/processing/processing-java.exe"
     "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
 
     "variants": [
