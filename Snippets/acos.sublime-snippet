@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[acos(${1:rad});]]></content>
+    <content><![CDATA[acos(${1:value});]]></content>
     <description>acos</description>
     <scope>source.pde</scope>
     <tabTrigger>acos</tabTrigger>
