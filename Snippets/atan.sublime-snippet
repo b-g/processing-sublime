@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[atan(${1:rad});]]></content>
+    <content><![CDATA[atan(${1:value});]]></content>
     <description>atan</description>
     <scope>source.pde</scope>
     <tabTrigger>atan</tabTrigger>

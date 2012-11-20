@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[rotateZ(${1:angle});]]></content>
+    <content><![CDATA[rotateZ(${1:rad});]]></content>
     <description>rotateZ</description>
     <scope>source.pde</scope>
     <tabTrigger>rotate</tabTrigger>

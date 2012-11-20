@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[// rotate, x-axis, y-axis, z-axiz
-gl.glRotatef(${1:angle}, ${2:x}, ${3:y}, ${4:z});]]></content>
+    <content><![CDATA[// rotation in degrees, x coordinate of a vector, y coord., z coord.
+gl.glRotatef(${1:deg}, ${2:x}, ${3:y}, ${4:z});]]></content>
     <description>glRotatef</description>
     <scope>source.pde</scope>
     <tabTrigger>glrotatef</tabTrigger>
