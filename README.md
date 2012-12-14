@@ -47,12 +47,16 @@ Go to your Sublime Text 2 `Packages` directory and clone the theme repository us
 - Run the sketch: `cmd+b`
 - With `cmd+shift+b` and typing `build` you get alternative buildsystems: `Run sketch fullscreen` and various `Export sketch options`
 
+## Hints
+- Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function reect(int, int, int, int) does not exist.` to jump to the related line and file.
+
 ## Getting Start With Sublime Text
 If you are new to Sublime I recommend the excellent and free video tutorial by nettuts: [Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/). If you are short of time, then make sure to watch at least the lession [Multiple Cursors and Incremental Search]( https://tutsplus.com/lesson/multiple-cursors-and-incremental-search/) (~6min), highly recommended!
 
 ## Acknowledgements
 - This bundle is very much based on [Processing TextMate Bundle by Leon Hong](http://www.onebitwonder.com/projects/processing/), thanks for all the good work!
 - I used the [textmate-to-sublime-converter](https://github.com/srbs/textmate-to-sublime-converter) to convert the snippets from the original Processing TextMate Bundle to Sublime Text speak.
-- Syntax highlighting tweaking by [Mark Brand](https://github.com/ignism)
-- Linux build script and testing by [Julien Deswaef](http://xuv.be/)
+- Syntax highlighting tweaking [Mark Brand](https://github.com/ignism)
+- Linux build script and testing [Julien Deswaef](http://xuv.be/)
 - Windows build script and documention [Ralf Baecker](http://github.com/rlfbckr)
+- Error console capturer [Greger Stolt Nilsen](http://gregerstoltnilsen.net/)
