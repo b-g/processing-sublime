@@ -1,7 +1,7 @@
 {
     "selector": "source.pde",
     "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
-
+    "file_regex": "^(...*?):([0-9]*)",
     "encoding": "ISO8859-1",
 
     "variants": [
