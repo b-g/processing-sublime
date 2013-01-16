@@ -7,9 +7,11 @@ Please note: you must have at least (>=Processing 2.0b6), otherwise the buildsys
 
 ## Preparations
 ###OSX
-Make sure to run after you have installed the Processing.app `Tools -> Install "processing-java"`
+Make sure to run `Tools -> Install "processing-java"` after you have installed the Processing.app.
 
 ![Use external editor preference](https://github.com/b-g/processing-sublime/raw/master/Images/processing_preferences.gif "Use external editor preference")
+
+This bundle assumes that you chose to install processing-java for all users (recomended). If you choose/have to install processing-java only in your home directory, then you have to slightly change the build script, see comment in `Processing.sublime-build`.
 
 ###Linux
 You will need to set your PATH to where your processing application is located, e.g.:
@@ -44,7 +46,7 @@ Go to your Sublime Text 2 `Packages` directory and clone the theme repository us
 
 ## Usage
 - Select in Sublime Text the Processing buildsystem: `Tools -> Build system -> Processing`
-- Run the sketch: `cmd+b`
+- Run the sketch: `cmd+b` (make sure that you have the normal sketch structure of a folder and a pde-file: mysketch/mysketch.pde)
 - With `cmd+shift+b` and typing `build` you get alternative buildsystems: `Run sketch fullscreen` and various `Export sketch options`
 
 ## Hints
