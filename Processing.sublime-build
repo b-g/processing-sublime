@@ -15,7 +15,7 @@
       	"name": "Export sketch as a 32-bit linux application"
     	},
 
-      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux64", "--export", "--platform=linux", "--force"],
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux64", "--export", "--platform=linux", "--bits=64", "--force"],
         "name": "Export sketch as a 64-bit linux application"
       },
 
@@ -27,7 +27,7 @@
       	"name": "Export sketch as a 32-bit windows application"
     	},
 
-      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows64", "--export", "--platform=windows", "--force"],
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows64", "--export", "--platform=windows", "--bits=64", "--force"],
         "name": "Export sketch as a 64-bit windows application"
       }
 
