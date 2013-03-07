@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[pushMatrix();
-${1:};
+${1:}
 popMatrix();]]></content>
-    <description>pushMatrix</description>
+    <description>pushMatrix/popMatrix</description>
     <scope>source.pde</scope>
     <tabTrigger>matrix</tabTrigger>
 </snippet>

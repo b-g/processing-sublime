@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[max(${1:array}};]]></content>
+    <content><![CDATA[max(${1:array});]]></content>
     <description>max array</description>
     <scope>source.pde</scope>
     <tabTrigger>max</tabTrigger>

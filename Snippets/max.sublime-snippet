@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[max(${1:value1}, ${2:value2}${4:, ${3:value3}});]]></content>
+    <content><![CDATA[max(${1:value1}, ${2:value2});]]></content>
     <description>max</description>
     <scope>source.pde</scope>
     <tabTrigger>max</tabTrigger>

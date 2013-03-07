@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[frameRate]]></content>
-    <description>frameRate</description>
+    <description>frameRate (debug)</description>
     <scope>source.pde</scope>
     <tabTrigger>framerate</tabTrigger>
 </snippet>

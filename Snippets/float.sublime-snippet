@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[float ${1:f} ${6:= ${3:0.0f}};]]></content>
+    <content><![CDATA[float ${1:f} ${6:= ${3:0.0}};]]></content>
     <description>float</description>
     <scope>source.pde</scope>
     <tabTrigger>float</tabTrigger>
