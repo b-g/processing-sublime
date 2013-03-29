@@ -25,7 +25,7 @@ You will need to set your PATH environment variable to where your processing app
 - Edit the "Path" variable. Append the processing path (e.g.: `;C:\Program Files\Processing-2.0b6\`) to Variable value.
   Each entry is separated with a semicolon.
 
-or write a sperate build system as documented in this [comment](https://github.com/b-g/processing-sublime/issues/17#issuecomment-15585500)
+or write a seperate build system as documented in this [comment](https://github.com/b-g/processing-sublime/issues/17#issuecomment-15585500)
 
 ![Advanced System Settings -> Environment Variables](https://github.com/b-g/processing-sublime/raw/master/Images/processing_path_windows.gif)
 
