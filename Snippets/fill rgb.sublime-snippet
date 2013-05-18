@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[fill(${1:red}, ${2:green}, ${3:blue});]]></content>
+    <description>fill rgb</description>
+    <scope>source.pde</scope>
+    <tabTrigger>fill</tabTrigger>
+</snippet>

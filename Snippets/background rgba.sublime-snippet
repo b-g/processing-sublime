@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[background(${1:red}, ${2:green}, ${3:blue}, ${6:alpha});]]></content>
+    <description>background rgba</description>
+    <scope>source.pde</scope>
+    <tabTrigger>background</tabTrigger>
+</snippet>
