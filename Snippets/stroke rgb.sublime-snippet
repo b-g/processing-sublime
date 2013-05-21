@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[stroke(${1:red}, ${2:green}, ${3:blue});]]></content>
+    <description>stroke rgb</description>
+    <scope>source.pde</scope>
+    <tabTrigger>stroke</tabTrigger>
+</snippet>
