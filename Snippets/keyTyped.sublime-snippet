@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[void keyTyped(){
+    <content><![CDATA[void keyTyped() {
 	${1}
 }]]></content>
     <description>keyTyped</description>

@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[void mouseDragged(){
+    <content><![CDATA[void mouseDragged() {
 	${1}
 }]]></content>
     <description>mouseDragged</description>

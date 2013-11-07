@@ -1,14 +1,10 @@
 <snippet>
-    <content><![CDATA[${1:public }class ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} ${3:extends}
-{
-	
-	//--------------------------------------
-	//  CONSTRUCTOR
-	//--------------------------------------
-	
+    <content><![CDATA[${1:public }class ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} ${3:extends} {
+
 	public $2 (${4:arguments}) {
-		${0:// expression}
+		${0}
 	}
+
 }
 ]]></content>
     <description>class</description>
