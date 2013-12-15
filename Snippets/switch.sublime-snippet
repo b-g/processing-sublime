@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[switch ($1){
+    <content><![CDATA[switch ($1) {
 	$0
 }]]></content>
     <description>switch</description>

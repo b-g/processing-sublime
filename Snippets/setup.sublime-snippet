@@ -1,10 +1,10 @@
 <snippet>
-    <content><![CDATA[void setup(){
+    <content><![CDATA[void setup() {
 	$1
 }
 
-void draw(){
-	$0	
+void draw() {
+	$0
 }
 ]]></content>
     <description>setup</description>

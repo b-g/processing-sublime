@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[for (${1:Object} ${2:o} : ${3:array}){
+    <content><![CDATA[for (${1:Object} ${2:o} : ${3:array}) {
 	$0
 }]]></content>
     <description>for in</description>

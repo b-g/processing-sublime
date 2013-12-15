@@ -1,6 +1,2 @@
-
 .DS_Store
-
-Comments (Java Processing).tmPreferences.cache
-
-Processing.tmLanguage.cache
+*.cache
