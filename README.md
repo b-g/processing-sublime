@@ -64,3 +64,4 @@ If you are new to Sublime I recommend the excellent and free video tutorial by n
 - Linux build script and testing [Julien Deswaef](http://xuv.be/)
 - Windows build script and documention [Ralf Baecker](http://github.com/rlfbckr)
 - Error console capturer [Greger Stolt Nilsen](http://gregerstoltnilsen.net/)
+- Whitespace and indentation cleanup [Yong Joseph Bakos](http://yongbakos.com/)
