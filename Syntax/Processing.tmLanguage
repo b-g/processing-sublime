@@ -167,7 +167,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(focused|frameCount|frameRate|height|height|key|keyCode|keyPressed|mouseButton|mousePressed|mouseX|mouseY|online|pixels|pmouseX|pmouseY|screen|width)\b</string>
+			<string>\b(displayHeight|displayWidth|focused|frameCount|frameRate|height|key|keyCode|keyPressed|mouseButton|mousePressed|mouseX|mouseY|online|pixels|pmouseX|pmouseY|screen|width)\b</string>
 			<key>name</key>
 			<string>constant.other.java-processing</string>
 		</dict>
