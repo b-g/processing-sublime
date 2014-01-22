@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[shapeMode(${1:CENTER});]]></content>
+	<description>shapeMode</description>
+	<scope>source.pde</scope>
+	<tabTrigger>shapemode</tabTrigger>
+</snippet>

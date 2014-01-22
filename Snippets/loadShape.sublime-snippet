@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[loadShape(${1:filename});]]></content>
+    <description>loadShape</description>
+    <scope>source.pde</scope>
+    <tabTrigger>loadshape</tabTrigger>
+</snippet>

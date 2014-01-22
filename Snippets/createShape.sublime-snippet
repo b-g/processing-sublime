@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[createShape(${1:type});]]></content>
+    <description>createShape</description>
+    <scope>source.pde</scope>
+    <tabTrigger>createshape</tabTrigger>
+</snippet>
