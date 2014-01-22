@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[ellipseMode(${1:CENTER})]]></content>
+	<content><![CDATA[ellipseMode(${1:CENTER});]]></content>
 	<description>ellipseMode</description>
 	<scope>source.pde</scope>
 	<tabTrigger>ellipseMode</tabTrigger>
