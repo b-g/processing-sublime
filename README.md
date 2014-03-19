@@ -1,6 +1,6 @@
-# Processing Bundle for Sublime Text 2
+# Processing Bundle for Sublime Text
 
-A [Processing](http://processing.org/) bundle for [Sublime Text 2](http://www.sublimetext.com/2). Check the [demo video](https://vimeo.com/45573600) on vimeo!
+A [Processing](http://processing.org/) bundle for [Sublime Text 2 and 3](http://www.sublimetext.com/). Check the [demo video](https://vimeo.com/45573600) on vimeo!
 Please note: you must have at least (>=Processing 2.0b6), otherwise the buildsystem of the this bundle won't work. The video is a bit outdated, you don't have to run any longer the Processing.app in parallel to run sketches. If you have to stick for some reason to an old Processing verion e.g. 1.5.1 you can use the [old version](https://github.com/b-g/processing-sublime/tags) of this bundle.
 
 [<img src="https://github.com/b-g/processing-sublime/raw/master/Images/overview.png">](https://vimeo.com/45573600)
