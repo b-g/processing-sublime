@@ -16,6 +16,9 @@ This bundle assumes that you chose to install processing-java for all users (rec
 ###Linux
 You will need to set your PATH to where your processing application is located, e.g.:
 `export PATH=$PATH:/opt/processing/processing-2.0b4`
+You also need to create an alias for `processing-java` in `/bin/` instead of `/usr/bin/`, e.g.:
+`$ sudo ln -s /opt/processing-2.1/processing-java /bin/processing-java`
+The above assumes that processing has been moved to `/opt/`.
 
 ###Windows
 You will need to set your PATH environment variable to where your processing application is located:
