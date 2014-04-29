@@ -14,11 +14,11 @@ Make sure to run `Tools -> Install "processing-java"` after you have installed t
 This bundle assumes that you chose to install processing-java for all users (recomended). If you choose/have to install processing-java only in your home directory, then you have to slightly change the build script, see comment in `Processing.sublime-build`.
 
 ###Linux
-You will need to set your PATH to where your processing application is located, e.g.:
+You will need to set your PATH to where your processing application is located, e.g.:  
 `export PATH=$PATH:/opt/processing/processing-2.0b4`
-You also need to create an alias for `processing-java` in `/bin/` instead of `/usr/bin/`, e.g.:
-`$ sudo ln -s /opt/processing-2.1/processing-java /bin/processing-java`
-The above assumes that processing has been moved to `/opt/`.
+
+You also need to create an alias for `processing-java` in `/bin/` instead of `/usr/bin/`, e.g.:  
+`sudo ln -s /opt/processing/processing-java /bin/processing-java`
 
 ###Windows
 You will need to set your PATH environment variable to where your processing application is located:
