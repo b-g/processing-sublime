@@ -20,6 +20,10 @@
 			<string>source.c++</string>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>source.java</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(abs|acos|alpha|ambient|ambientLight|append|applyMatrix|arc|arrayCopy|asin|atan2|atan|background|beginCamera|beginContour|beginRaw|beginRecord|beginShape|bezier|bezierDetail|bezierPoint|bezierTangent|bezierVertex|binary|blend|blendMode|blue|boolean|box|brightness|byte|cache|camera|ceil|char|charAt|clear|color|colorMode|concat|constrain|contract|copy|cos|createFont|createGraphics|createImage|createInput|createOutput|createReader|createShape|createWriter|cursor|curve|curveDetail|curvePoint|curveSegments|curveTangent|curveTightness|curveVertex|day|degrees|delay|directionalLight|dist|duration|ellipse|ellipseMode|emissive|endCamera|endContour|endRaw|endRecord|endShape|equals|exit|exp|expand|fill|filter|float|floor|framerate|frustum|get|green|hex|hint|hour|hue|image|imageMode|indexOf|int|join|keyPressed|keyReleased|keyTyped|length|lerp|lerpColor|lightFalloff|lightSpecular|lights|line|link|list|loadBytes|loadFont|loadImage|loadJSONArray|loadJSONObject|loadPixels|loadShader|loadShape|loadSound|loadStrings|loadTable|loadXML|log|lookat|loop|mag|map|mask|match|matchAll|max|millis|min|minute|modelX|modelY|modelZ|month|mouseClicked|mouseDragged|mouseMoved|mousePressed|mouseReleased|mouseWheel|nf|nfc|nfp|nfs|noCursor|noFill|noLights|noLoop|noSmooth|noStroke|noTint|noise|noiseDetail|noiseSeed|norm|normal|open|openStream|ortho|param|parseXML|pause|perspective|play|point|pointLight|popMatrix|popStyle|pow|print|printArray|printCamera|printMatrix|printProjection|println|pushMatrix|pushStyle|quad|quadraticVertex|radians|random|randomGaussian|randomSeed|rect|rectMode|red|redraw|requestImage|resetMatrix|resetShader|reverse|rotate|rotateX|rotateY|rotateZ|round|saturation|save|saveBytes|saveFrame|saveJSONArray|saveJSONObject|saveStream|saveStrings|saveTable|saveXML|scale|screenX|screenY|screenZ|second|selectFolder|selectInput|selectOutput|set|shader|shape|shapeMode|shearX|shearY|shininess|shorten|sin|size|smooth|sort|specular|sphere|sphereDetail|splice|split|splitTokens|spotLight|sq|sqrt|status|stop|str|stroke|strokeCap|strokeJoin|strokeWeight|subset|substring|switch|tan|text|textAlign|textAscent|textDescent|textFont|textLeading|textMode|textSize|textWidth|texture|textureMode|textureWrap|time|tint|toLowerCase|toUpperCase|translate|triangle|trim|unHint|unbinary|unhex|updatePixels|vertex|volume|year|draw|setup)\b</string>
 			<key>name</key>
@@ -289,10 +293,6 @@
 			<string>\b(class)\s+([a-zA-Z_](?:\w|\.)*)(?:\s+(extends)\s+([a-zA-Z_](?:\w|\.)*))?</string>
 			<key>name</key>
 			<string>meta.class.java-processing</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>source.java</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
