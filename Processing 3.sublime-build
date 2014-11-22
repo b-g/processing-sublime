@@ -1,0 +1,43 @@
+{
+    "selector": "source.pde",
+    "cmd": ["processing-java", "--sketch=$file_path", "--run", "--force"],
+    "file_regex": "^(...*?):([0-9]*)",
+    "encoding": "ISO8859-1",
+
+    // if you choose to install processing-java just in your home dir then use for the cmd "~/processing-java" instead of "processing-java"
+    "variants": [
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--present", "--force"],
+        "name": "Run sketch fullscreen"
+      },
+      
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
+        "name": "Build & run sketch"
+      },
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
+        "name": "Build & run sketch fullscreen"
+      },
+
+    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux32", "--export", "--platform=linux", "--bits=32", "--force"],
+      	"name": "Export sketch as a 32-bit linux application"
+    	},
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux64", "--export", "--platform=linux", "--bits=64", "--force"],
+        "name": "Export sketch as a 64-bit linux application"
+      },
+
+    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.macosx", "--export", "--platform=macosx", "--force"],
+      	"name": "Export sketch as a macosx application"
+    	},
+
+    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows32", "--export", "--platform=windows", "--bits=32", "--force"],
+      	"name": "Export sketch as a 32-bit windows application"
+    	},
+
+      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows64", "--export", "--platform=windows", "--bits=64", "--force"],
+        "name": "Export sketch as a 64-bit windows application"
+      }
+
+	]
+}
