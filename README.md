@@ -83,3 +83,4 @@ If you are new to Sublime I recommend the excellent and free video tutorial by n
 - Windows build script and documention [Ralf Baecker](http://github.com/rlfbckr)
 - Error console capturer [Greger Stolt Nilsen](http://gregerstoltnilsen.net/)
 - Master of the syntax definition. Whitespace and indentation cleanup. Processing reference vs. sublime [diff tool](https://github.com/ybakos/processing-sublime-util). [Yong Joseph Bakos](http://yongbakos.com/).
+- How to set custom shortcuts [Raphaël de Courville](https://github.com/SableRaf)
