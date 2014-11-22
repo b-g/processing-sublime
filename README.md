@@ -54,10 +54,25 @@ Go to your Sublime Text `Packages` directory and clone the theme repository usin
 - Run the sketch: `cmd+b` (make sure that you have the normal sketch structure of a folder and a pde-file: mysketch/mysketch.pde)
 - With `cmd+shift+b` and typing `build` you get alternative buildsystems: `Run sketch fullscreen` and various `Export sketch options`
 
+### Custom shortcuts
+To get .pde files to run with `cmd+r` and `cmd+shift+r` instead of `cmd+b` and `cmd+shift+b` Add the following code to ```Preferences``` > ```Key Bindings - User``` in Sublime Text:
+
+```
+	{ "keys": ["super+r"], "command": "build", "context":
+	[
+	{ "key": "selector", "operator": "equal", "operand": "source.pde" }
+	]},
+	{ "keys": ["super+shift+r"], "command": "build", "args": {"variant": "Run sketch fullscreen"}, "context":
+	[
+	{ "key": "selector", "operator": "equal", "operand": "source.pde" }
+	]}
+```
+
+
 ## Hints
 - Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function reect(int, int, int, int) does not exist.` to jump to the related line and file.
 
-## Getting Start With Sublime Text
+## Getting Started With Sublime Text
 If you are new to Sublime I recommend the excellent and free video tutorial by nettuts: [Perfect Workflow in Sublime Text](http://net.tutsplus.com/articles/news/perfect-workflow-in-sublime-text-free-course/). If you are short of time, then make sure to watch at least the lession [Multiple Cursors and Incremental Search]( https://tutsplus.com/lesson/multiple-cursors-and-incremental-search/) (~6min), highly recommended!
 
 ## Acknowledgements
