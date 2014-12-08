@@ -7,6 +7,8 @@ SOURCE_DIRECTORY_NAME = "src"
 BUILDFILE_TEMPLATE_NAME = "build.xml.template"
 GENERATED_BUILDFILE_NAME = "build.xml"
 JAVA_TEMPLATE_FILENAMES = ["Main.java.template", "Sketch.java.template"]
+SKETCH_FILE_NAME = "Sketch.java"
+STATUS_MESSAGE = "New Java Ant Processing project created. Be sure to use the Ant build system, not JavaC."
 
 class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
 
@@ -25,7 +27,8 @@ class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
         self.generate_files_from_template(PROJECT_TEMPLATE_PATH,
                                           generated_source_path,
                                           package_name)
-        self.window.status_message("New Java Ant project created.")
+        self.window.open_file(os.path.join(generated_source_path, SKETCH_FILE_NAME))
+        sublime.status_message(STATUS_MESSAGE)
     
     def create_project_directories(self, path):
         if not os.path.exists(path):
