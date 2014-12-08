@@ -6,6 +6,7 @@ PROJECT_TEMPLATE_PATH = os.path.abspath("Commands/templates/new_java_ant_project
 SOURCE_DIRECTORY_NAME = "src"
 BUILDFILE_TEMPLATE_NAME = "build.xml.template"
 GENERATED_BUILDFILE_NAME = "build.xml"
+JAVA_TEMPLATE_FILENAMES = ["Main.java.template", "Sketch.java.template"]
 
 class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
 
@@ -17,34 +18,43 @@ class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
                                      None, None)
   
     def generate_project(self, package_name):
-        project_path = os.path.join(self.window.folders()[0],
-                                    SOURCE_DIRECTORY_NAME,
-                                    re.sub('\.', '/', package_name.lower()))
-        self.create_project_directories(project_path)
+        generated_source_path = os.path.join(self.window.folders()[0],
+                                             SOURCE_DIRECTORY_NAME,
+                                             re.sub('\.', '/', package_name.lower()))
+        self.create_project_directories(generated_source_path)
         self.generate_files_from_template(PROJECT_TEMPLATE_PATH,
-                                          project_path,
+                                          generated_source_path,
                                           package_name)
+        self.window.status_message("New Java Ant project created.")
     
     def create_project_directories(self, path):
         if not os.path.exists(path):
             os.makedirs(path)
   
-    def generate_files_from_template(self, template_path, project_path, package_name):
-        processing_library_path = self.determine_processing_library_path()
+    def generate_files_from_template(self, template_path, generated_source_path, package_name):
+        self.generate_buildfile(template_path, package_name)
+        self.generate_java_boilerplate(template_path, generated_source_path, package_name)
+    
+    def generate_buildfile(self, template_path, package_name):
         with open(os.path.join(template_path, BUILDFILE_TEMPLATE_NAME), 'r') as build_template:
-            template_contents = build_template.read()
-        template = string.Template(template_contents)
-        build_file_contents = template.substitute(processing_library_path = processing_library_path,
-                                                  ant_project_name = package_name.split('.')[-1],
-                                                  package_name = package_name)
+            template = string.Template(build_template.read())
         with open(os.path.join(self.window.folders()[0], GENERATED_BUILDFILE_NAME), 'w') as buildfile:
-            buildfile.write(build_file_contents)
-  
+            buildfile.write(template.substitute(ant_project_name = package_name.split('.')[-1],
+                                                processing_library_path = self.determine_processing_library_path(),
+                                                package_name = package_name))
+
+    def generate_java_boilerplate(self, template_path, generated_source_path, package_name):
+        for template_name in JAVA_TEMPLATE_FILENAMES:
+            with open(os.path.join(template_path, template_name), 'r') as java_template:
+                template = string.Template(java_template.read())
+            with open(os.path.join(generated_source_path, template_name.rsplit('.', 1)[0]), 'w') as source_file:
+                source_file.write(template.substitute(package_name = package_name))
+
     def determine_processing_library_path(self):
-        return "TODO"
+        # TODO: determine path from OS? Or use explicit settings.
+        return "/Applications/Processing.app/Contents/Java/core/library"
 
 #open_file(file, contents)
-
 
 # class NewFolderCommand(sublime_plugin.WindowCommand):
 #     def run(self, dirs):
