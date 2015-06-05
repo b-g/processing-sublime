@@ -17,6 +17,10 @@
 	<array>
 		<dict>
 			<key>include</key>
+			<string>source.c++</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>source.java</string>
 		</dict>
 		<dict>
