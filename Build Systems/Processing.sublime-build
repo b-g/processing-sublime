@@ -1,35 +1,54 @@
 {
-    "selector": "source.pde",
-    "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
-    "file_regex": "^(...*?):([0-9]*)",
-    "encoding": "ISO8859-1",
+	"selector": "source.pde",
+	"cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
+	"file_regex": "^(...*?):([0-9]*)",
+	"encoding": "ISO8859-1",
 
-    // if you choose to install processing-java just in your home dir then use for the cmd "~/processing-java" instead of "processing-java"
-    "variants": [
+	// if you choose to install processing-java just in your home dir then use for the cmd "~/processing-java" instead of "processing-java"
+	"variants": [
+		{ 
+			// Close old sketch on build.
+			"name": "Re-run sketch" ,
+			"windows": {
+				"shell_cmd": "wmic process where \"Caption Like '%java.exe%' AND CommandLine Like '%$file_base_name%'\" call terminate 1>nul && processing-java --sketch=\"$file_path\" --run --force"
+			},
 
-      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
-        "name": "Run sketch fullscreen"
-      },
+			"osx": {
+				"shell_cmd": "pkill -f $file_base_name; processing-java --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run --force"
+			},
 
-    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux32", "--export", "--platform=linux", "--bits=32", "--force"],
-      	"name": "Export sketch as a 32-bit linux application"
-    	},
+			"linux": {
+				"shell_cmd": "pkill -f \"java.*$file_path\\$\"; processing-java --sketch=\"$file_path\" --run --force"
+			}
+		},
+				
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
+			"name": "Run sketch fullscreen"
+		},
 
-      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux64", "--export", "--platform=linux", "--bits=64", "--force"],
-        "name": "Export sketch as a 64-bit linux application"
-      },
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application", "--export", "--force"],
+			"name": "Export sketch as application (Processing 3)"
+		},
 
-    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.macosx", "--export", "--platform=macosx", "--force"],
-      	"name": "Export sketch as a macosx application"
-    	},
+		// Legacy Build Systems for Processing 2.0
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux32", "--export", "--platform=linux", "--bits=32", "--force"],
+			"name": "Export sketch as a 32-bit linux application (Processing 2)"
+		},
 
-    	{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows32", "--export", "--platform=windows", "--bits=32", "--force"],
-      	"name": "Export sketch as a 32-bit windows application"
-    	},
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.linux64", "--export", "--platform=linux", "--bits=64", "--force"],
+			"name": "Export sketch as a 64-bit linux application (Processing 2)"
+		},
 
-      { "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows64", "--export", "--platform=windows", "--bits=64", "--force"],
-        "name": "Export sketch as a 64-bit windows application"
-      }
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.macosx", "--export", "--platform=macosx", "--force"],
+			"name": "Export sketch as a macosx application (Processing 2)"
+		},
 
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows32", "--export", "--platform=windows", "--bits=32", "--force"],
+			"name": "Export sketch as a 32-bit windows application (Processing 2)"
+		},
+
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application.windows64", "--export", "--platform=windows", "--bits=64", "--force"],
+			"name": "Export sketch as a 64-bit windows application (Processing 2)"
+		}
 	]
 }
