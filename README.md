@@ -73,15 +73,20 @@ To get `.pde` files to run with **⌘R** and **⇧⌘R** (like Processing) inste
 
 Want a "pure Java" Processing project but don't like [Eclipse](http://eclipse.org)? Try creating a project with the _New Java Ant Project_ command. (See [issue 61](https://github.com/b-g/processing-sublime/issues/61).)
 
+#### Prerequisites
+Be sure that [ant](http://ant.apache.org/) is installed and on your environment's `PATH`. You know this is right when you can open a terminal, run `ant`, and see a `Build failed` message. This means that [ant](http://ant.apache.org/) is runnable, and failing is ok because there is no "Buildfile."
+
+Make sure that the variable `DEFAULT_PROCESSING_LIBRARY_PATH` within the file `Processing.py` inside this package matches your installation of Processing. If you are on OS X and `Processing.app` is in the `Applications` directory, then you do not need to edit this. Despite this, OS X users may need to install the [Fix Mac Path](https://packagecontrol.io/packages/Fix%20Mac%20Path) package, due to the way Sublime manages environment variables such as `PATH`.
+
+#### Using the Command
+
 1. Create an empty directory (folder) for your new project, and open that empty directory in Sublime.
 2. Use either the menu item _Tools > Processing > New Java Ant Project_ or select the _Processing: New Java Ant Project_ command from the command pallete (**⇧⌘P**).
-3. Specify a Java package name for your source code.
-4. Use the _Tools > Build System > Ant_ menu item to ensure that Ant is the active build system.
-5. Use **⌘B** to build and run your sketch.
+3. Specify a Java package name for your source code (e.g. `com.myorg.myapp`).
+4. Use the _Tools > Build System > Ant_ menu item to ensure that _Ant_ is the active build system.
+5. Use **⌘B** to build and run your sketch. Out of the box, you should see a full screen app that displays the default 200x200px gray sketch, which is the Processing default.
 
 You can now continue to add classes to your sketch, and run it with **⌘B**. Just be sure that _Ant_ is the active build system.
-
-**Note:** OS X users may need to install the [Fix Mac Path](https://packagecontrol.io/packages/Fix%20Mac%20Path) package, due to the way Sublime manages environment variables such as `PATH`.
 
 ## Hints
 Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function rEEct(int, int, int, int) does not exist` to jump to the related line and file.

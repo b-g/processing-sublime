@@ -1,7 +1,7 @@
 import sublime, sublime_plugin, sys, functools, os, re, string
 
-#from plugins.new_java_project import *
-
+# NOTE: Change this next line to match the correct library path for your system.
+DEFAULT_PROCESSING_LIBRARY_PATH = "/Applications/Processing.app/Contents/Java/core/library"
 PROJECT_TEMPLATE_PATH = os.path.abspath("Commands/templates/new_java_ant_project")
 SOURCE_DIRECTORY_NAME = "src"
 BUILDFILE_TEMPLATE_NAME = "build.xml.template"
@@ -55,7 +55,7 @@ class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
 
     def determine_processing_library_path(self):
         # TODO: determine path from OS? Or use explicit settings.
-        return "/Applications/Processing.app/Contents/Java/core/library"
+        return DEFAULT_PROCESSING_LIBRARY_PATH
 
 #open_file(file, contents)
 
