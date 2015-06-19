@@ -21,6 +21,10 @@
 				"shell_cmd": "pkill -f \"java.*$file_path\\$\"; processing-java --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run --force"
 			}
 		},
+
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--present", "--force"],
+			"name": "Run sketch (Processing 3 only)"
+		},
 				
 		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
 			"name": "Run sketch fullscreen"
