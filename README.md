@@ -69,9 +69,10 @@ To get `.pde` files to run with **⌘R** and **⇧⌘R** (like Processing) inste
     "context": [{ "key": "selector", "operator": "equal", "operand": "source.pde" }]
 }
 ```
-### _New Java Ant Project_ Command
 
-Want a "pure Java" Processing project but don't like [Eclipse](http://eclipse.org)? Try creating a project with the _New Java Ant Project_ command. (See [issue 61](https://github.com/b-g/processing-sublime/issues/61).)
+### Want a "Pure Java" Project without Eclipse?
+
+Complex projects often lead people into using Processing with [Eclipse](http://eclipse.org). If you want to stick with Sublime Text, but want a "pure Java" Processing project _and_ the convenience of a fast "build and run" workflow, try creating a project with the _New Java Ant Project_ command (see [issue 61](https://github.com/b-g/processing-sublime/issues/61)) and run your sketch with the _Ant_ build system.
 
 #### Prerequisites
 Be sure that [ant](http://ant.apache.org/) is installed and on your environment's `PATH`. You know this is right when you can open a terminal, run `ant`, and see a `Build failed` message. This means that [ant](http://ant.apache.org/) is runnable, and failing is ok because there is no "Buildfile."
@@ -86,7 +87,7 @@ Make sure that the variable `DEFAULT_PROCESSING_LIBRARY_PATH` within the file `P
 4. Use the _Tools > Build System > Ant_ menu item to ensure that _Ant_ is the active build system.
 5. Use **⌘B** to build and run your sketch. Out of the box, you should see a full screen app that displays the default 200x200px gray sketch, which is the Processing default.
 
-You can now continue to add classes to your sketch, and run it with **⌘B**. Just be sure that _Ant_ is the active build system.
+You can now implement `setup` and `draw`, add additional classes to your sketch, and run it with **⌘B**. Just be sure that _Ant_ is the active build system.
 
 ## Hints
 Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function rEEct(int, int, int, int) does not exist` to jump to the related line and file.

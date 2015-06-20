@@ -2,7 +2,7 @@ import sublime, sublime_plugin, sys, functools, os, re, string
 
 # NOTE: Change this next line to match the correct library path for your system.
 DEFAULT_PROCESSING_LIBRARY_PATH = "/Applications/Processing.app/Contents/Java/core/library"
-PROJECT_TEMPLATE_PATH = os.path.abspath("Commands/templates/new_java_ant_project")
+PROJECT_TEMPLATE_PATH = os.path.dirname(os.path.abspath(__file__)) + "/Commands/templates/new_java_ant_project"
 SOURCE_DIRECTORY_NAME = "src"
 BUILDFILE_TEMPLATE_NAME = "build.xml.template"
 GENERATED_BUILDFILE_NAME = "build.xml"
