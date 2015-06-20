@@ -22,7 +22,7 @@
 			}
 		},
 
-		{ "cmd": ["processing-java", "--sketch=$file_path", "--present", "--force"],
+		{ "cmd": ["processing-java", "--sketch=$file_path", "--run", "--force"],
 			"name": "Run sketch (Processing 3 only)"
 		},
 				
