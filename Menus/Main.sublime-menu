@@ -1,0 +1,21 @@
+[
+    {
+        "caption": "Tools",
+        "mnemonic": "T",
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Processing",
+                "mnemonic": "P",
+                "id": "Processing",
+                "children":
+                [
+                    { "caption": "New Java Ant Project", "command": "new_java_ant_project"}
+                ]
+            }
+        ]
+    
+    }
+]
+

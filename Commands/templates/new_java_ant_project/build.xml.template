@@ -1,0 +1,55 @@
+<project name="$ant_project_name" basedir="." default="run">
+
+    <property name="processing.dir"
+              value="$processing_library_path" />
+    <property name="src.dir"     value="src" />
+    <property name="build.dir"   value="build" />
+    <property name="classes.dir" value="$${build.dir}/classes" />
+    <property name="jar.dir"     value="dist" />
+    <property name="main-class"  value="$package_name.Main" />
+
+    <fileset id="processing.library" dir="$${processing.dir}">
+        <include name="*.jar" />
+    </fileset>
+
+    <path id="build.classpath">
+        <fileset refid="processing.library" />
+    </path>
+
+    <pathconvert property="manifest.classpath" pathsep=" ">
+        <path refid="build.classpath"/>
+        <mapper>
+            <chainedmapper>
+               <flattenmapper />
+               <globmapper from="*.jar" to="$${processing.dir}/*.jar"/>
+            </chainedmapper>
+        </mapper>
+    </pathconvert>
+
+    <target name="build" depends="clean, compile, jar" />
+
+    <target name="clean">
+        <delete dir="$${build.dir}" />
+    </target>
+
+    <target name="compile">
+        <mkdir dir="$${classes.dir}" />
+        <javac srcdir="$${src.dir}" destdir="$${classes.dir}" classpathref="build.classpath"
+               includeantruntime="false" />
+    </target>
+
+    <target name="jar">
+        <mkdir dir="$${jar.dir}" />
+        <jar destfile="$${jar.dir}/$${ant.project.name}.jar" basedir="$${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="$${main-class}" />
+                <attribute name="Class-Path" value="$${manifest.classpath}" />
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="build">
+        <java jar="$${jar.dir}/$${ant.project.name}.jar" fork="true" />
+    </target>
+
+</project>
