@@ -1,9 +1,10 @@
 # Processing Package for Sublime Text
 
 A [Processing](http://processing.org/) package for [Sublime Text 2 and 3](http://www.sublimetext.com/). Check the [demo video](https://vimeo.com/45573600) on vimeo!
-Please note: you must have at least (>=Processing 2.0b6), otherwise the build system of the this package won't work. The video is a bit outdated, you don't have to run any longer the Processing.app in parallel to run sketches. If you have to use an old Processing verion (e.g. 1.5.1), you can use [version 1.0 of this package](https://github.com/b-g/processing-sublime/releases/tag/v1.0_Processing_1.5.1).
+Please note: you must have at least (>=Processing 2.0b6), otherwise the build system of the this package won't work. The video is a bit outdated, you don't have to run any longer the Processing.app in parallel to run sketches. If you have to use an old Processing version (e.g. 1.5.1), you can use [version 1.0 of this package](https://github.com/b-g/processing-sublime/releases/tag/v1.0_Processing_1.5.1).
 
 [<img src="https://github.com/b-g/processing-sublime/raw/master/Images/overview.png">](https://vimeo.com/45573600)
+
 
 ## Preparations
 ### OSX
@@ -32,6 +33,7 @@ Or, write a separate build system as documented in this [comment](https://github
 
 ![Advanced System Settings > Environment Variables](https://github.com/b-g/processing-sublime/raw/master/Images/processing_path_windows.gif "Windows Environment Variables")
 
+
 ## Installation
 There are three easy ways to install the Processing package:
 
@@ -48,6 +50,7 @@ Go to your Sublime Text `Packages` directory and clone this repository:
 - Download the files using the GitHub [.zip download option](https://github.com/b-g/processing-sublime/archive/master.zip).
 - Unzip the file and rename the directory to `Processing`.
 - Copy the directory to your Sublime Text `Packages` directory e.g. OS X: `~/Library/Application Support/Sublime Text 2/Packages/Processing`.
+
 
 ## Usage
 - Open the directory containing a Processing sketch in Sublime Text. (e.g. Drag the folder to Sublime Text.)
@@ -70,16 +73,20 @@ To get `.pde` files to run with **⌘R** and **⇧⌘R** (like Processing) inste
 }
 ```
 
-### Want a "Pure Java" Project without Eclipse?
+### Console errors
+Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function rEEct(int, int, int, int) does not exist` to jump to the related line and file.
+
+
+## Want a "Pure Java" Project without Eclipse?
 
 Complex projects often lead people into using Processing with [Eclipse](http://eclipse.org). If you want to stick with Sublime Text, but want a "pure Java" Processing project _and_ the convenience of a fast "build and run" workflow, try creating a project with the _New Java Ant Project_ command (see [issue 61](https://github.com/b-g/processing-sublime/issues/61)) and run your sketch with the _Ant_ build system.
 
-#### Prerequisites
+### Prerequisites
 Be sure that [ant](http://ant.apache.org/) is installed and on your environment's `PATH`. You know this is right when you can open a terminal, run `ant`, and see a `Build failed` message. This means that [ant](http://ant.apache.org/) is runnable, and failing is ok because there is no "Buildfile."
 
 Make sure that the variable `DEFAULT_PROCESSING_LIBRARY_PATH` within the file `Processing.py` inside this package matches your installation of Processing. If you are on OS X and `Processing.app` is in the `Applications` directory, then you do not need to edit this. Despite this, OS X users may need to install the [Fix Mac Path](https://packagecontrol.io/packages/Fix%20Mac%20Path) package, due to the way Sublime manages environment variables such as `PATH`.
 
-#### Using the Command
+### Using the Command
 
 1. Create an empty directory (folder) for your new project, and open that empty directory in Sublime.
 2. Use either the menu item _Tools > Processing > New Java Ant Project_ or select the _Processing: New Java Ant Project_ command from the command pallete (**⇧⌘P**).
@@ -89,15 +96,14 @@ Make sure that the variable `DEFAULT_PROCESSING_LIBRARY_PATH` within the file `P
 
 You can now implement `setup` and `draw`, add additional classes to your sketch, and run it with **⌘B**. Just be sure that _Ant_ is the active build system.
 
-## Hints
-Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function rEEct(int, int, int, int) does not exist` to jump to the related line and file.
 
-## Getting Started With Sublime Text
+## Getting Started with Sublime Text
 If you are new to Sublime I recommend the [Perfect Workflow in Sublime Text](http://code.tutsplus.com/courses/perfect-workflow-in-sublime-text-2) tutorial. If you are short of time, then make sure to at least watch [Multiple Cursors and Incremental Search](http://code.tutsplus.com/courses/perfect-workflow-in-sublime-text-2/lessons/multiple-cursors-and-incremental-search) (~6min), highly recommended!
+
 
 ## Acknowledgements
 - Original [Processing TextMate Bundle](http://www.onebitwonder.com/projects/processing/): [Leon Hong](http://www.onebitwonder.com/)
-- Textmate Bundle to Sublime snippet conversion: [textmate-to-sublime-converter](https://github.com/srbs/textmate-to-sublime-converter)
+- Textmate to Sublime snippet conversion: [textmate-to-sublime-converter](https://github.com/srbs/textmate-to-sublime-converter)
 - Maintainer: [Benedikt Groß](http://benedikt-gross.de/log/)
 - Syntax highlighting tweaking: [Mark Brand](https://github.com/ignism)
 - Linux build script and testing: [Julien Deswaef](http://xuv.be/)
