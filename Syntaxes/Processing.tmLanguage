@@ -21,6 +21,30 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.other.package.java</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.package.java</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.terminator.java</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(package)\b(?:\s*([^ ;$]+)\s*(;)?)?</string>
+			<key>name</key>
+			<string>meta.package.java</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>keyword.other.import.processing</string>
 				</dict>
 				<key>2</key>
@@ -283,7 +307,7 @@
 		<key>class</key>
 		<dict>
 			<key>begin</key>
-			<string>(?=\w?[\w\s]*(?:class|(?:@)?interface)\s+\w+)</string>
+			<string>(?=\w?[\w\s]*(?:class|(?:@)?interface|enum)\s+\w+)</string>
 			<key>end</key>
 			<string>}</string>
 			<key>endCaptures</key>
@@ -321,7 +345,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(class|(?:@)?interface)\s+(\w+)</string>
+					<string>(class|(?:@)?interface|enum)\s+(\w+)</string>
 					<key>name</key>
 					<string>meta.class.identifier.processing</string>
 				</dict>
@@ -407,6 +431,10 @@
 				<dict>
 					<key>include</key>
 					<string>#class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#enums</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -594,6 +622,52 @@
 				</dict>
 			</array>
 		</dict>
+		<key>enums</key>
+		<dict>
+			<key>begin</key>
+			<string>^(?=\s*[A-Z0-9_]+\s*({|\(|,))</string>
+			<key>end</key>
+			<string>(?=;|})</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\w+</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>constant.other.enum.java</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?=,|;|})</string>
+					<key>name</key>
+					<string>meta.enum.java</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#parens</string>
+						</dict>
+						<dict>
+							<key>begin</key>
+							<string>{</string>
+							<key>end</key>
+							<string>}</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#class-body</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
 		<key>keywords</key>
 		<dict>
 			<key>patterns</key>
@@ -694,12 +768,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>support.function.any-method.c</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parameters.c</string>
+							<string>support.function.any-method.processing</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -707,9 +776,9 @@
     				(
     					(?!while|for|do|if|else|switch|catch|enumerate|return|r?iterate)(?: \b[A-Za-z_][A-Za-z0-9_]*+\b | :: )*+                  # actual name
     				)
-    				 \s*(\()</string>
+    				 \s*(?:\()</string>
 					<key>name</key>
-					<string>meta.function-call.c</string>
+					<string>meta.function-call.processing</string>
 				</dict>
 			</array>
 		</dict>
@@ -1097,7 +1166,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.processing</string>
+	<string>source.pde</string>
 	<key>uuid</key>
 	<string>D3D6351E-1416-4AE7-8060-665C6108D2C5</string>
 </dict>
