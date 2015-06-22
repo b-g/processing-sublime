@@ -4,5 +4,5 @@
     <keyEquivalent>
 </keyEquivalent>
     <description>doc - newline</description>
-    <scope>comment.block.java-processing</scope>
+    <scope>comment.block.processing</scope>
 </snippet>
