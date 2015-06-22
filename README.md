@@ -111,3 +111,4 @@ If you are new to Sublime I recommend the [Perfect Workflow in Sublime Text](htt
 - Error console capturer: [Greger Stolt Nilsen](http://gregerstoltnilsen.net/)
 - Syntax definition, snippet cleansing, Processing reference vs. sublime [diff tool](https://github.com/ybakos/processing-sublime-util), and _New Java Ant Project_ command: [Yong Joseph Bakos](http://yongbakos.com)
 - How to set custom shortcuts: [Raphaël de Courville](https://github.com/SableRaf)
+- Rebuild of the processing syntax highlighter: [Kyle Fleming](https://github.com/kylefleming)
