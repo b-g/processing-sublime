@@ -4,7 +4,7 @@ import processing.core.*;
 
 class Main {
 
-    private final static String[] OPTIONS = new String[] { "--present", "$package_name.Sketch" };
+    private static final String[] OPTIONS = new String[] { "--present", "$package_name.Sketch" };
     
     public static void main(String[] args) {
         PApplet.main(OPTIONS);
