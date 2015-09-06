@@ -1,6 +1,6 @@
 {
 	"selector": "source.pde",
-	"cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run", "--force"],
+	"cmd": ["processing-java", "--force", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run"],
 	"file_regex": "^(...*?):([0-9]*)",
 	"encoding": "ISO8859-1",
 
@@ -10,27 +10,27 @@
 			// Close old sketch on build.
 			"name": "Re-run sketch" ,
 			"windows": {
-				"shell_cmd": "wmic process where \"Caption Like '%java.exe%' AND CommandLine Like '%$file_base_name%'\" call terminate 1>nul && processing-java --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run --force"
+				"shell_cmd": "wmic process where \"Caption Like '%java.exe%' AND CommandLine Like '%$file_base_name%'\" call terminate 1>nul && processing-java --force --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run"
 			},
 
 			"osx": {
-				"shell_cmd": "pkill -f $file_base_name; processing-java --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run --force"
+				"shell_cmd": "pkill -f $file_base_name; processing-java  --force --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run"
 			},
 
 			"linux": {
-				"shell_cmd": "pkill -f \"java.*$file_path\\$\"; processing-java --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run --force"
+				"shell_cmd": "pkill -f \"java.*$file_path\\$\"; processing-java --force --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run"
 			}
 		},
 
-		{ "cmd": ["processing-java", "--sketch=$file_path", "--run", "--force"],
+		{ "cmd": ["processing-java", "--force", "--sketch=$file_path", "--run"],
 			"name": "Run sketch (Processing 3 only)"
 		},
 				
-		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present", "--force"],
+		{ "cmd": ["processing-java", "--force", "--sketch=$file_path", "--output=$file_path/build-tmp", "--present"],
 			"name": "Run sketch fullscreen"
 		},
 
-		{ "cmd": ["processing-java", "--sketch=$file_path", "--output=$file_path/application", "--export", "--force"],
+		{ "cmd": ["processing-java", "--force", "--sketch=$file_path", "--output=$file_path/application", "--export"],
 			"name": "Export sketch as application"
 		}
 	]
