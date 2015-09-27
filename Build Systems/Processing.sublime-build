@@ -4,7 +4,7 @@
 	"cmd": ["processing-java", "--force", "--sketch=$file_path", "--output=$file_path/build-tmp", "--run"],
 	"file_regex": "^(...*?):([0-9]*)",
 	"encoding": "ISO8859-1",
-	"osx": { "path": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin" },
+	"osx": { "path": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin" },
 
 	"variants": [
 		{	// Close old sketch on build.
