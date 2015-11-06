@@ -14,7 +14,7 @@
 			},
 
 			"osx": {
-				"shell_cmd": "pkill -f $file_base_name; processing-java  --force --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run"
+				"shell_cmd": "pkill -f \\$(basename \"$file_path\"); processing-java  --force --sketch=\"$file_path\" --output=\"$file_path/build-tmp\" --run"
 			},
 
 			"linux": {
