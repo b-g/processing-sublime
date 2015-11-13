@@ -307,7 +307,7 @@
 		<key>class</key>
 		<dict>
 			<key>begin</key>
-			<string>(?=\w?[\w\s]*(?:class|(?:@)?interface|enum)\s+\w+)</string>
+			<string>(?=\w?[\w\s]*(?:class|(?:@)?interface)\s+\w+)</string>
 			<key>end</key>
 			<string>}</string>
 			<key>endCaptures</key>
@@ -345,7 +345,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(class|(?:@)?interface|enum)\s+(\w+)</string>
+					<string>(class|(?:@)?interface)\s+(\w+)</string>
 					<key>name</key>
 					<string>meta.class.identifier.processing</string>
 				</dict>
@@ -420,6 +420,122 @@
 				</dict>
 			</array>
 		</dict>
+		<key>enum</key>
+		<dict>
+			<key>begin</key>
+			<string>(?=\w?[\w\s]*(?:enum)\s+\w+)</string>
+			<key>end</key>
+			<string>}</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.class.end.processing</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.class.processing</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#storage-modifiers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.modifier.processing</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.type.class.processing</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(enum)\s+(\w+)</string>
+					<key>name</key>
+					<string>meta.class.identifier.processing</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>extends</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>storage.modifier.extends.processing</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?={|implements)</string>
+					<key>name</key>
+					<string>meta.definition.class.inherited.classes.processing</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#object-types-inherited</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#comments</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(implements)\s</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.modifier.implements.processing</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?=\s*extends|\{)</string>
+					<key>name</key>
+					<string>meta.definition.class.implemented.interfaces.processing</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#object-types-inherited</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#comments</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>{</string>
+					<key>end</key>
+					<string>(?=})</string>
+					<key>name</key>
+					<string>meta.class.body.processing</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#enum-body</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
 		<key>class-body</key>
 		<dict>
 			<key>patterns</key>
@@ -431,6 +547,44 @@
 				<dict>
 					<key>include</key>
 					<string>#class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#enum</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#methods</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#annotations</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#storage-modifiers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#code</string>
+				</dict>
+			</array>
+		</dict>
+		<key>enum-body</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#enum</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -465,6 +619,10 @@
 				<dict>
 					<key>include</key>
 					<string>#class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#enum</string>
 				</dict>
 				<dict>
 					<key>begin</key>
