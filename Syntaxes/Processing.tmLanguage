@@ -199,7 +199,7 @@
 							<array>
 								<dict>
 									<key>include</key>
-									<string>#code</string>
+									<string>#inner-code</string>
 								</dict>
 							</array>
 						</dict>
@@ -246,7 +246,7 @@
 							<array>
 								<dict>
 									<key>include</key>
-									<string>#code</string>
+									<string>#inner-code</string>
 								</dict>
 							</array>
 						</dict>
@@ -659,6 +659,60 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#operators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#storage-modifiers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#strings</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#all-types</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#function-calls</string>
+				</dict>
+			</array>
+		</dict>
+		<key>inner-code</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#assertions</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#parens</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constants-and-special-vars</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#anonymous-classes-and-new</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#keywords</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#inner-operators</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#storage-modifiers</string>
 				</dict>
 				<dict>
@@ -761,6 +815,12 @@
 				<dict>
 					<key>match</key>
 					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)([LlFfUuDd]|UL|ul)?\b</string>
+					<key>name</key>
+					<string>constant.numeric.processing</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(#[0-9a-fA-F]+)\b</string>
 					<key>name</key>
 					<string>constant.numeric.processing</string>
 				</dict>
@@ -872,17 +932,70 @@
 					<key>name</key>
 					<string>keyword.operator.processing</string>
 				</dict>
+			</array>
+		</dict>
+		<key>operators</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#common-operators</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>=</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.assignment.processing</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>;</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#inner-code</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>match</key>
-					<string>(==|!=|&lt;=|&gt;=|&lt;&gt;|&lt;|&gt;)</string>
+					<string>;</string>
 					<key>name</key>
-					<string>keyword.operator.comparison.processing</string>
+					<string>punctuation.terminator.processing</string>
+				</dict>
+			</array>
+		</dict>
+		<key>inner-operators</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#common-operators</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(=)</string>
 					<key>name</key>
 					<string>keyword.operator.assignment.processing</string>
+				</dict>
+			</array>
+		</dict>
+		<key>common-operators</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(==|!=|&lt;=|&gt;=|&lt;&gt;|&lt;|&gt;)</string>
+					<key>name</key>
+					<string>keyword.operator.comparison.processing</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -907,12 +1020,6 @@
 					<string>(?&lt;=\S)\.(?=\S)</string>
 					<key>name</key>
 					<string>keyword.operator.dereference.processing</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>;</string>
-					<key>name</key>
-					<string>punctuation.terminator.processing</string>
 				</dict>
 			</array>
 		</dict>
@@ -1060,7 +1167,7 @@
 							<array>
 								<dict>
 									<key>include</key>
-									<string>#code</string>
+									<string>#inner-code</string>
 								</dict>
 							</array>
 						</dict>
@@ -1167,7 +1274,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#code</string>
+					<string>#inner-code</string>
 				</dict>
 			</array>
 		</dict>
