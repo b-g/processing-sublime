@@ -1,0 +1,3 @@
+[
+    { "keys": ["super+."], "command": "build", "args": {"variant": "Kill running sketches"} }
+]
