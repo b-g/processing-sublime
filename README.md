@@ -15,10 +15,10 @@ Use Processing's _Tools > Install "processing-java"_ menu item after you have in
 This package assumes that you chose to install `processing-java` for all users (recommended). If you choose to install `processing-java` only in your home directory, then you have to slightly change the build script, see the comment in the file [Processing.sublime-build](https://github.com/b-g/processing-sublime/blob/master/Build%20Systems/Processing.sublime-build).
 
 ### Linux
-You will need to set your `PATH` to where your processing application is located, e.g.:  
+You will need to set your `PATH` to where your processing application is located, e.g.:
 `export PATH=$PATH:/opt/processing/processing-2.0b4`
 
-You also need to create an alias for `processing-java` in `/bin/` instead of `/usr/bin/`, e.g.:  
+You also need to create an alias for `processing-java` in `/bin/` instead of `/usr/bin/`, e.g.:
 `sudo ln -s /opt/processing/processing-java /bin/processing-java`
 
 ### Windows
@@ -112,3 +112,6 @@ If you are new to Sublime I recommend the [Perfect Workflow in Sublime Text](htt
 - Syntax definition, snippet cleansing, Processing reference vs. sublime [diff tool](https://github.com/ybakos/processing-sublime-util), and _New Java Ant Project_ command: [Yong Joseph Bakos](http://yongbakos.com)
 - How to set custom shortcuts: [Raphaël de Courville](https://github.com/SableRaf)
 - Rebuild of the processing syntax highlighter: [Kyle Fleming](https://github.com/kylefleming)
+
+See the [contributing guide](https://github.com/b-g/processing-sublime/blob/master/CONTRIBUTING.md) to learn about how to contribute to this project.
+
