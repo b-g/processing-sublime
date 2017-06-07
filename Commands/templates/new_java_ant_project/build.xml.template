@@ -3,6 +3,7 @@
     <property name="processing.dir"
               value="$processing_library_path" />
     <property name="src.dir"     value="src" />
+    <property name="lib.dir"     value="lib" />
     <property name="build.dir"   value="build" />
     <property name="classes.dir" value="$${build.dir}/classes" />
     <property name="jar.dir"     value="dist" />
@@ -11,13 +12,20 @@
     <fileset id="processing.library" dir="$${processing.dir}">
         <include name="*.jar" />
     </fileset>
+    <fileset id="lib" dir="$${lib.dir}">
+        <include name="**/*.jar"/>
+    </fileset>
 
-    <path id="build.classpath">
+    <path id="compile.classpath">
+        <fileset refid="processing.library" />
+        <fileset refid="lib" />
+    </path>
+    <path id="jar.classpath">
         <fileset refid="processing.library" />
     </path>
 
     <pathconvert property="manifest.classpath" pathsep=" ">
-        <path refid="build.classpath"/>
+        <path refid="jar.classpath"/>
         <mapper>
             <chainedmapper>
                <flattenmapper />
@@ -34,7 +42,7 @@
 
     <target name="compile">
         <mkdir dir="$${classes.dir}" />
-        <javac srcdir="$${src.dir}" destdir="$${classes.dir}" classpathref="build.classpath"
+        <javac srcdir="$${src.dir}" destdir="$${classes.dir}" classpathref="compile.classpath"
                includeantruntime="false" />
     </target>
 
@@ -45,6 +53,7 @@
                 <attribute name="Main-Class" value="$${main-class}" />
                 <attribute name="Class-Path" value="$${manifest.classpath}" />
             </manifest>
+            <zipgroupfileset dir="$${lib.dir}" includes="**/*.jar" />
         </jar>
     </target>
 

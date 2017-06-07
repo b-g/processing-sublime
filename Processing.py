@@ -18,7 +18,7 @@ class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
                                      "com.foo.appname or simplepackagename",
                                      functools.partial(self.generate_project),
                                      None, None)
-  
+
     def generate_project(self, package_name):
         generated_source_path = os.path.join(self.window.folders()[0],
                                              SOURCE_DIRECTORY_NAME,
@@ -29,15 +29,18 @@ class NewJavaAntProjectCommand(sublime_plugin.WindowCommand):
                                           package_name)
         self.window.open_file(os.path.join(generated_source_path, SKETCH_FILE_NAME))
         sublime.status_message(STATUS_MESSAGE)
-    
+
     def create_project_directories(self, path):
         if not os.path.exists(path):
             os.makedirs(path)
-  
+        lib_directory = os.path.join(self.window.folders()[0], 'lib')
+        if not os.path.exists(lib_directory):
+            os.mkdir(lib_directory)
+
     def generate_files_from_template(self, template_path, generated_source_path, package_name):
         self.generate_buildfile(template_path, package_name)
         self.generate_java_boilerplate(template_path, generated_source_path, package_name)
-    
+
     def generate_buildfile(self, template_path, package_name):
         with open(os.path.join(template_path, BUILDFILE_TEMPLATE_NAME), 'r') as build_template:
             template = string.Template(build_template.read())

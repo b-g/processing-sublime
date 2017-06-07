@@ -95,6 +95,7 @@ Make sure that the variable `DEFAULT_PROCESSING_LIBRARY_PATH` within the file `P
 5. Use **⌘B** to build and run your sketch. Out of the box, you should see a full screen app that displays the default 200x200px gray sketch, which is the Processing default.
 
 You can now implement `setup` and `draw`, add additional classes to your sketch, and run it with **⌘B**. Just be sure that _Ant_ is the active build system.
+You can add library jars to the `lib` subdirectory and `ant` will bundle it up with your project's generated jar file.
 
 
 ## Getting Started with Sublime Text
