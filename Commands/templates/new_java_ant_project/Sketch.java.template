@@ -3,13 +3,13 @@ package $package_name;
 import processing.core.*;
 
 public class Sketch extends PApplet {
-    
+
     public void setup() {
-        
+
     }
 
     public void draw() {
-        
+
     }
 
 }
