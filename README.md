@@ -58,7 +58,7 @@ Go to your Sublime Text `Packages` directory and clone this repository:
 - In Sublime Text, select your main `.pde` file and use **⌘B** to run the sketch. The build system expects that your sketch follows the normal directory structure and naming conventions of a Processing sketch (e.g. `mysketch/mysketch.pde`).
 - With **⇧⌘B** and typing `build`, you can select alternative build systems, such as _Run sketch fullscreen_ and various _Export sketch_ options.
 
-### Custom shortcuts
+### Custom Shortcuts
 To get `.pde` files to run with **⌘R** and **⇧⌘R** (like Processing) instead of **⌘B** and **⇧⌘B**, add the following code to the User Key Bindings file via the _Preferences > Key Bindings - User_ menu item in Sublime Text.
 
 ```
@@ -73,9 +73,16 @@ To get `.pde` files to run with **⌘R** and **⇧⌘R** (like Processing) inste
 }
 ```
 
-### Console errors
+### Console Errors
 Console error messages are clickable: e.g. double click `test.pde:10:0:10:0: The function rEEct(int, int, int, int) does not exist` to jump to the related line and file.
 
+### Filenames of Sketches
+Your filenames have to follow specific rules, otherwise they won't work with `processing-java`:
+
+- must not contain dashes `-` (see processing/processing#4861)
+- must not start with a number `0123456789` (see processing/processing#2152)
+- must not start with an underscore `_`  (see processing/processing#2152)
+- must adhere to [Java class naming rules](https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.8) (see [stackoverflow discussion](https://stackoverflow.com/a/65490/7574329) for the gist of it)
 
 ## Want a "Pure Java" Project without Eclipse?
 
@@ -104,7 +111,7 @@ If you are new to Sublime I recommend the [Perfect Workflow in Sublime Text](htt
 ## Acknowledgements
 - Original [Processing TextMate Bundle](http://www.onebitwonder.com/projects/processing/): [Leon Hong](http://www.onebitwonder.com/)
 - Textmate to Sublime snippet conversion: [textmate-to-sublime-converter](https://github.com/srbs/textmate-to-sublime-converter)
-- Maintainer: [Benedikt Groß](http://benedikt-gross.de/log/)
+- Maintainer: [Benedikt Groß](http://benedikt-gross.de/log/), [Yong Joseph Bakos](http://yongbakos.com)
 - Syntax highlighting tweaking: [Mark Brand](https://github.com/ignism)
 - Linux build script and testing: [Julien Deswaef](http://xuv.be/)
 - Windows build script and documention: [Ralf Baecker](http://github.com/rlfbckr)
@@ -112,6 +119,7 @@ If you are new to Sublime I recommend the [Perfect Workflow in Sublime Text](htt
 - Syntax definition, snippet cleansing, Processing reference vs. sublime [diff tool](https://github.com/ybakos/processing-sublime-util), and _New Java Ant Project_ command: [Yong Joseph Bakos](http://yongbakos.com)
 - How to set custom shortcuts: [Raphaël de Courville](https://github.com/SableRaf)
 - Rebuild of the processing syntax highlighter: [Kyle Fleming](https://github.com/kylefleming)
+- Filenames rules of sketches: [MaxValue](https://github.com/MaxValue)
 
 See the [contributing guide](https://github.com/b-g/processing-sublime/blob/master/CONTRIBUTING.md) to learn about how to contribute to this project.
 
